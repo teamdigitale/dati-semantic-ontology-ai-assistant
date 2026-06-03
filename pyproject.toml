@@ -13,7 +13,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     # "lightrag-hku @ {root:parent:uri}",  # Use downstream LightRAG core fork
-    "lightrag-hku == 1.4.0",  # Use upstream LightRAG core
+    "lightrag-hku == 1.4.14",  # Use upstream LightRAG core
     "fastapi[standard]",
     "future",
     "jpype1",
