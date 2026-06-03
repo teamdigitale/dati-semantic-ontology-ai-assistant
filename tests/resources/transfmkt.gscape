@@ -1,0 +1,6382 @@
+{
+  "diagrams": [
+    {
+      "id": 0,
+      "name": "Transkermarkt",
+      "nodes": [
+        {
+          "id": "n",
+          "type": "class",
+          "originalId": "n",
+          "diagramId": 0,
+          "displayedName": "Player",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/Player",
+          "position": {
+            "x": 1704.1522415683405,
+            "y": 449.37027306757636
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n2",
+          "type": "data-property",
+          "originalId": "n2",
+          "diagramId": 0,
+          "displayedName": "player ID",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/playerID",
+          "position": {
+            "x": 1606.4290009229535,
+            "y": 299.61347775362276
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n4",
+          "type": "data-property",
+          "originalId": "n4",
+          "diagramId": 0,
+          "displayedName": "first name",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/firstName",
+          "position": {
+            "x": 1900.499499146042,
+            "y": 397.16236585947917
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n6",
+          "type": "data-property",
+          "originalId": "n6",
+          "diagramId": 0,
+          "displayedName": "last name",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/lastName",
+          "position": {
+            "x": 1580.109162362125,
+            "y": 461.5655324497496
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n8",
+          "type": "data-property",
+          "originalId": "n8",
+          "diagramId": 0,
+          "displayedName": "full name",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/fullName",
+          "position": {
+            "x": 1678.1842700097097,
+            "y": 580.8058407749769
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n10",
+          "type": "data-property",
+          "originalId": "n10",
+          "diagramId": 0,
+          "displayedName": "last season",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/lastSeason",
+          "position": {
+            "x": 1866.1556710707944,
+            "y": 315.5033054084296
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n12",
+          "type": "data-property",
+          "originalId": "n12",
+          "diagramId": 0,
+          "displayedName": "player code",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/playerCode",
+          "position": {
+            "x": 1748.8357241509718,
+            "y": 348.5134277683853
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n14",
+          "type": "data-property",
+          "originalId": "n14",
+          "diagramId": 0,
+          "displayedName": "birth date",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/birthDate",
+          "position": {
+            "x": 1804.6174552274106,
+            "y": 417.6240317658655
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n16",
+          "type": "data-property",
+          "originalId": "n16",
+          "diagramId": 0,
+          "displayedName": "foot",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/foot",
+          "position": {
+            "x": 1608.820879988856,
+            "y": 535.4822282846768
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n18",
+          "type": "data-property",
+          "originalId": "n18",
+          "diagramId": 0,
+          "displayedName": "height",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/height",
+          "position": {
+            "x": 1814.1379263636754,
+            "y": 522.6467505568527
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n20",
+          "type": "data-property",
+          "originalId": "n20",
+          "diagramId": 0,
+          "displayedName": "image URL",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/imageURL",
+          "position": {
+            "x": 1697.7696947294723,
+            "y": 258.6642194640073
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n22",
+          "type": "data-property",
+          "originalId": "n22",
+          "diagramId": 0,
+          "displayedName": "player URL",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/playerURL",
+          "position": {
+            "x": 1759.609582839051,
+            "y": 578.8088199810096
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n24",
+          "type": "data-property",
+          "originalId": "n24",
+          "diagramId": 0,
+          "displayedName": "current market value",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/currentMarketValue",
+          "position": {
+            "x": 1655.1176834787766,
+            "y": 367.1982035443979
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n26",
+          "type": "data-property",
+          "originalId": "n26",
+          "diagramId": 0,
+          "displayedName": "highest market value",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/highestMarketValue",
+          "position": {
+            "x": 1889.39657195634,
+            "y": 488.6402355839887
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n28",
+          "type": "class",
+          "originalId": "n28",
+          "diagramId": 0,
+          "displayedName": "Club",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/Club",
+          "position": {
+            "x": 992.681745943585,
+            "y": 632.7158176610104
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n29",
+          "type": "data-property",
+          "originalId": "n29",
+          "diagramId": 0,
+          "displayedName": "club ID",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/clubID",
+          "position": {
+            "x": 875.58134794455,
+            "y": 467.07763337077404
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n31",
+          "type": "data-property",
+          "originalId": "n31",
+          "diagramId": 0,
+          "displayedName": "club code",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/clubCode",
+          "position": {
+            "x": 946.1866561957535,
+            "y": 785.6188862873291
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n33",
+          "type": "data-property",
+          "originalId": "n33",
+          "diagramId": 0,
+          "displayedName": "club name",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/clubName",
+          "position": {
+            "x": 960.384683939278,
+            "y": 454.0430763048335
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n35",
+          "type": "data-property",
+          "originalId": "n35",
+          "diagramId": 0,
+          "displayedName": "squad size",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/squadSize",
+          "position": {
+            "x": 845.0391229974949,
+            "y": 746.3535316973908
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n37",
+          "type": "data-property",
+          "originalId": "n37",
+          "diagramId": 0,
+          "displayedName": "average age",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/averageAge",
+          "position": {
+            "x": 1031.763828735358,
+            "y": 493.29264645897126
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n39",
+          "type": "data-property",
+          "originalId": "n39",
+          "diagramId": 0,
+          "displayedName": "number of foreigners",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/numberOfForeigners",
+          "position": {
+            "x": 898.0205742385705,
+            "y": 681.4313032544084
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n41",
+          "type": "data-property",
+          "originalId": "n41",
+          "diagramId": 0,
+          "displayedName": "percentage of foreigners",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/percentageOfForeigners",
+          "position": {
+            "x": 812.1042159316398,
+            "y": 642.5155152318042
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n43",
+          "type": "data-property",
+          "originalId": "n43",
+          "diagramId": 0,
+          "displayedName": "number of current national team players",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/numberOfCurrentNationalTeamPlayers",
+          "position": {
+            "x": 1068.6618070790496,
+            "y": 582.2367538450627
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n45",
+          "type": "data-property",
+          "originalId": "n45",
+          "diagramId": 0,
+          "displayedName": "net transfer record",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/netTransferRecord",
+          "position": {
+            "x": 813.2574911753808,
+            "y": 542.7020029214101
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n47",
+          "type": "data-property",
+          "originalId": "n47",
+          "diagramId": 0,
+          "displayedName": "club last season",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/clubLastSeason",
+          "position": {
+            "x": 901.629433188709,
+            "y": 568.7090618968097
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n49",
+          "type": "data-property",
+          "originalId": "n49",
+          "diagramId": 0,
+          "displayedName": "club URL",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/clubURL",
+          "position": {
+            "x": 1023.8425473246338,
+            "y": 749.4253372885122
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n52",
+          "type": "class",
+          "originalId": "n52",
+          "diagramId": 0,
+          "displayedName": "Country",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/Country",
+          "position": {
+            "x": 1532.1982210622239,
+            "y": 40.55078192276802
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n53",
+          "type": "data-property",
+          "originalId": "n53",
+          "diagramId": 0,
+          "displayedName": "country name",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/countryName",
+          "position": {
+            "x": 1479.723667885952,
+            "y": -104.67074671078514
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n57",
+          "type": "class",
+          "originalId": "n57",
+          "diagramId": 0,
+          "displayedName": "City",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/City",
+          "position": {
+            "x": 2133.032629626222,
+            "y": 622.1123996156459
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n58",
+          "type": "data-property",
+          "originalId": "n58",
+          "diagramId": 0,
+          "displayedName": "city name",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/cityName",
+          "position": {
+            "x": 2308.5573237334092,
+            "y": 664.9186228674287
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n74",
+          "type": "data-property",
+          "originalId": "n74",
+          "diagramId": 0,
+          "displayedName": "sub position",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/subPosition",
+          "position": {
+            "x": 1792.7998314264762,
+            "y": 267.0247252369318
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n63",
+          "type": "class",
+          "originalId": "n63",
+          "diagramId": 0,
+          "displayedName": "Attack",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/Attack",
+          "position": {
+            "x": 2340.9937334982715,
+            "y": 45.271119162198886
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n65",
+          "type": "class",
+          "originalId": "n65",
+          "diagramId": 0,
+          "displayedName": "Goalkeeper",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/Goalkeeper",
+          "position": {
+            "x": 1984.2917475522188,
+            "y": 79.5788029431088
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n72",
+          "type": "data-property",
+          "originalId": "n72",
+          "diagramId": 0,
+          "displayedName": "player position",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/playerPosition",
+          "position": {
+            "x": 1554.8303132425126,
+            "y": 385.52558596465565
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n67",
+          "type": "class",
+          "originalId": "n67",
+          "diagramId": 0,
+          "displayedName": "Defender",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/Defender",
+          "position": {
+            "x": 1946.2416333125893,
+            "y": -386.64464564958445
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n69",
+          "type": "class",
+          "originalId": "n69",
+          "diagramId": 0,
+          "displayedName": "Midfleld",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/Midfleld",
+          "position": {
+            "x": 905.3508671105475,
+            "y": 1681.405111665551
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n75",
+          "type": "disjoint-union",
+          "diagramId": 0,
+          "position": {
+            "x": 2592.934982120856,
+            "y": -62.42735363035817
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "id": "n76",
+          "type": "class",
+          "originalId": "n76",
+          "diagramId": 0,
+          "displayedName": "Centre forward",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/CentreForward",
+          "position": {
+            "x": 2684.46867516202,
+            "y": 78.8050258981563
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n77",
+          "type": "class",
+          "originalId": "n77",
+          "diagramId": 0,
+          "displayedName": "Left winger",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/LeftWinger",
+          "position": {
+            "x": 2542.160757887858,
+            "y": -211.86856888200523
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n79",
+          "type": "class",
+          "originalId": "n79",
+          "diagramId": 0,
+          "displayedName": "Second striker",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/SecondStriker",
+          "position": {
+            "x": 2734.574262730026,
+            "y": -222.61419784757877
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n81",
+          "type": "class",
+          "originalId": "n81",
+          "diagramId": 0,
+          "displayedName": "Right winger",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/RightWinger",
+          "position": {
+            "x": 2804.2362490516393,
+            "y": -64.62165202988747
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n84",
+          "type": "disjoint-union",
+          "diagramId": 0,
+          "position": {
+            "x": 2009.9676358074469,
+            "y": -681.2354453408651
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "id": "n85",
+          "type": "class",
+          "originalId": "n85",
+          "diagramId": 0,
+          "displayedName": "Centre back",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/CentreBack",
+          "position": {
+            "x": 2176.714922195461,
+            "y": -769.1422155472405
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n87",
+          "type": "class",
+          "originalId": "n87",
+          "diagramId": 0,
+          "displayedName": "Left back",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/LeftBack",
+          "position": {
+            "x": 1903.1647391913923,
+            "y": -840.5597954917635
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n89",
+          "type": "class",
+          "originalId": "n89",
+          "diagramId": 0,
+          "displayedName": "Right back",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/RightBack",
+          "position": {
+            "x": 2062.508244279267,
+            "y": -907.0607310033606
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n92",
+          "type": "disjoint-union",
+          "diagramId": 0,
+          "position": {
+            "x": 707.3226789573596,
+            "y": 2039.142109619048
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "id": "n93",
+          "type": "class",
+          "originalId": "n93",
+          "diagramId": 0,
+          "displayedName": "Attacking midfield",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/AttackingMidfield",
+          "position": {
+            "x": 591.1482663130215,
+            "y": 2255.732013526293
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n95",
+          "type": "class",
+          "originalId": "n95",
+          "diagramId": 0,
+          "displayedName": "Central midfield",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/CentralMidfield",
+          "position": {
+            "x": 818.0446112311782,
+            "y": 2168.429364128786
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n97",
+          "type": "class",
+          "originalId": "n97",
+          "diagramId": 0,
+          "displayedName": "Defensive midfield",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/DefensiveMidfield",
+          "position": {
+            "x": 538.7513920755963,
+            "y": 2020.4516217604742
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n99",
+          "type": "class",
+          "originalId": "n99",
+          "diagramId": 0,
+          "displayedName": "Left midfield",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/LeftMidfield",
+          "position": {
+            "x": 729.1226650889522,
+            "y": 2269.3431415001924
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n101",
+          "type": "class",
+          "originalId": "n101",
+          "diagramId": 0,
+          "displayedName": "Right midfield",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/RightMidfield",
+          "position": {
+            "x": 503.39304021220664,
+            "y": 2152.5507065422703
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n104",
+          "type": "class",
+          "originalId": "n104",
+          "diagramId": 0,
+          "displayedName": "Agent",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/Agent",
+          "position": {
+            "x": 2231.0280485666667,
+            "y": 433.48345937205926
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n105",
+          "type": "data-property",
+          "originalId": "n105",
+          "diagramId": 0,
+          "displayedName": "agent name",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/agentName",
+          "position": {
+            "x": 2364.9596864907912,
+            "y": 466.2017919702046
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n108",
+          "type": "class",
+          "originalId": "n108",
+          "diagramId": 0,
+          "displayedName": "Competition",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/Competition",
+          "position": {
+            "x": 958.4806913238095,
+            "y": 0.3856087151913552
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n109",
+          "type": "class",
+          "originalId": "n109",
+          "diagramId": 0,
+          "displayedName": "Stadium",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/Stadium",
+          "position": {
+            "x": 1909.6612341831326,
+            "y": 1091.0509946464551
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n110",
+          "type": "data-property",
+          "originalId": "n110",
+          "diagramId": 0,
+          "displayedName": "stadium name",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/stadiumName",
+          "position": {
+            "x": 1888.9186464945587,
+            "y": 1199.6382538996713
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n112",
+          "type": "data-property",
+          "originalId": "n112",
+          "diagramId": 0,
+          "displayedName": "stadium seats",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/stadiumSeats",
+          "position": {
+            "x": 2072.499121018927,
+            "y": 1182.409847889781
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n115",
+          "type": "data-property",
+          "originalId": "n115",
+          "diagramId": 0,
+          "displayedName": "competition ID",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/competitionID",
+          "position": {
+            "x": 947.8181071559857,
+            "y": -131.92861127230887
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n117",
+          "type": "data-property",
+          "originalId": "n117",
+          "diagramId": 0,
+          "displayedName": "competition code",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/competitionCode",
+          "position": {
+            "x": 1064.5398604981344,
+            "y": -14.79801889044799
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n119",
+          "type": "data-property",
+          "originalId": "n119",
+          "diagramId": 0,
+          "displayedName": "competition name",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/competitionName",
+          "position": {
+            "x": 906.1023362017532,
+            "y": 103.86622880325399
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n121",
+          "type": "data-property",
+          "originalId": "n121",
+          "diagramId": 0,
+          "displayedName": "competition sub type",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/competitionSubType",
+          "position": {
+            "x": 850.9843600886584,
+            "y": -85.12451247757632
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n123",
+          "type": "data-property",
+          "originalId": "n123",
+          "diagramId": 0,
+          "displayedName": "competition type",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/competitionType",
+          "position": {
+            "x": 1063.2870668431938,
+            "y": -116.97781307350003
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n125",
+          "type": "data-property",
+          "originalId": "n125",
+          "diagramId": 0,
+          "displayedName": "competition URL",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/competitionURL",
+          "position": {
+            "x": 827.7480035056293,
+            "y": 29.535509838848256
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n127",
+          "type": "disjoint-union",
+          "diagramId": 0,
+          "position": {
+            "x": 563.5262828417204,
+            "y": -401.5804781002618
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "id": "n128",
+          "type": "class",
+          "originalId": "n128",
+          "diagramId": 0,
+          "displayedName": "Domestic cup",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/DomesticCup",
+          "position": {
+            "x": 423.8109488034234,
+            "y": -319.32440277643997
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n130",
+          "type": "class",
+          "originalId": "n130",
+          "diagramId": 0,
+          "displayedName": "Domestic league",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/DomesticLeague",
+          "position": {
+            "x": 582.1895519259846,
+            "y": -617.7755666507163
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n132",
+          "type": "class",
+          "originalId": "n132",
+          "diagramId": 0,
+          "displayedName": "International cup",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/InternationalCup",
+          "position": {
+            "x": 311.9566320642327,
+            "y": -517.7780365151566
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n135",
+          "type": "class",
+          "originalId": "n135",
+          "diagramId": 0,
+          "displayedName": "First tier",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/FirstTier",
+          "position": {
+            "x": 618.7579398356306,
+            "y": -809.3110567830953
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n137",
+          "type": "disjoint-union",
+          "diagramId": 0,
+          "position": {
+            "x": 69.98960548570747,
+            "y": -611.8591343832705
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "id": "n138",
+          "type": "class",
+          "originalId": "n138",
+          "diagramId": 0,
+          "displayedName": "Europa league",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/EuropaLeague",
+          "position": {
+            "x": -121.18473917069265,
+            "y": -683.6104865947982
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n140",
+          "type": "class",
+          "originalId": "n140",
+          "diagramId": 0,
+          "displayedName": "Europa league qualifying",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/EuropaLeagueQualifying",
+          "position": {
+            "x": 35.064439997908835,
+            "y": -443.47124260882885
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n142",
+          "type": "class",
+          "originalId": "n142",
+          "diagramId": 0,
+          "displayedName": "UEFAEuropa conference league qualifiers",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/UEFAEuropaConferenceLeagueQualifiers",
+          "position": {
+            "x": 158.46441016762446,
+            "y": -763.3366908096838
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n144",
+          "type": "class",
+          "originalId": "n144",
+          "diagramId": 0,
+          "displayedName": "UEFAChampions league",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/UEFAChampionsLeague",
+          "position": {
+            "x": -110.64982902058678,
+            "y": -517.5915631947665
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n146",
+          "type": "class",
+          "originalId": "n146",
+          "diagramId": 0,
+          "displayedName": "UEFAChampions league qualifying",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/UEFAChampionsLeagueQualifying",
+          "position": {
+            "x": -3.13626780104561,
+            "y": -800.0831786971785
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n149",
+          "type": "class",
+          "originalId": "n149",
+          "diagramId": 0,
+          "displayedName": "Domestic super cup",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/DomesticSuperCup",
+          "position": {
+            "x": 658.1374584046956,
+            "y": -91.58178597368033
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n151",
+          "type": "class",
+          "originalId": "n151",
+          "diagramId": 0,
+          "displayedName": "UEFASuper cup",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/UEFASuperCup",
+          "position": {
+            "x": 613.9040894976912,
+            "y": 37.93656359113877
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n153",
+          "type": "class",
+          "originalId": "n153",
+          "diagramId": 0,
+          "displayedName": "League cup",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/LeagueCup",
+          "position": {
+            "x": 965.9959962212741,
+            "y": -316.6387152712639
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n155",
+          "type": "class",
+          "originalId": "n155",
+          "diagramId": 0,
+          "displayedName": "FIFAClub world cup",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/FIFAClubWorldCup",
+          "position": {
+            "x": 818.5915100833246,
+            "y": -276.7939199029305
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n158",
+          "type": "data-property",
+          "originalId": "n158",
+          "diagramId": 0,
+          "displayedName": "country ID",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/countryID",
+          "position": {
+            "x": 1608.6854864003424,
+            "y": -100.4211209391443
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n161",
+          "type": "class",
+          "originalId": "n161",
+          "diagramId": 0,
+          "displayedName": "Confederation",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/Confederation",
+          "position": {
+            "x": 1108.6375347126327,
+            "y": -399.4111599107288
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n162",
+          "type": "data-property",
+          "originalId": "n162",
+          "diagramId": 0,
+          "displayedName": "confederation name",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/confederationName",
+          "position": {
+            "x": 1128.2084467884272,
+            "y": -540.8742669793422
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n165",
+          "type": "class",
+          "originalId": "n165",
+          "diagramId": 0,
+          "displayedName": "Player valuation",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/PlayerValuation",
+          "position": {
+            "x": 1208.4388216619307,
+            "y": 216.19671098823628
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n167",
+          "type": "data-property",
+          "originalId": "n167",
+          "diagramId": 0,
+          "displayedName": "player valuation date",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/playerValuationDate",
+          "position": {
+            "x": 1264.0703650299108,
+            "y": 100.75826331894297
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n169",
+          "type": "data-property",
+          "originalId": "n169",
+          "diagramId": 0,
+          "displayedName": "market value in euro",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/marketValueInEuro",
+          "position": {
+            "x": 1104.4590553994556,
+            "y": 221.0703256863355
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n173",
+          "type": "class",
+          "originalId": "n173",
+          "diagramId": 0,
+          "displayedName": "Appearance",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/Appearance",
+          "position": {
+            "x": 423.4151322269648,
+            "y": 328.56298154423604
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n174",
+          "type": "data-property",
+          "originalId": "n174",
+          "diagramId": 0,
+          "displayedName": "appearance date",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/appearanceDate",
+          "position": {
+            "x": 539.0682795063351,
+            "y": 386.24349543530457
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n176",
+          "type": "data-property",
+          "originalId": "n176",
+          "diagramId": 0,
+          "displayedName": "yellow cards",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/yellowCards",
+          "position": {
+            "x": 395.35579093803113,
+            "y": 461.7709593373262
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n178",
+          "type": "data-property",
+          "originalId": "n178",
+          "diagramId": 0,
+          "displayedName": "red cards",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/redCards",
+          "position": {
+            "x": 342.35729566179435,
+            "y": 383.06099392369225
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n180",
+          "type": "data-property",
+          "originalId": "n180",
+          "diagramId": 0,
+          "displayedName": "goals",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/goals",
+          "position": {
+            "x": 385.4368975988728,
+            "y": 209.34144220042634
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n182",
+          "type": "data-property",
+          "originalId": "n182",
+          "diagramId": 0,
+          "displayedName": "assists",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/assists",
+          "position": {
+            "x": 487.11174717029473,
+            "y": 446.3896272343673
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n184",
+          "type": "data-property",
+          "originalId": "n184",
+          "diagramId": 0,
+          "displayedName": "minutes played",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/minutesPlayed",
+          "position": {
+            "x": 485.87107696989426,
+            "y": 256.76847873706805
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n186",
+          "type": "class",
+          "originalId": "n186",
+          "diagramId": 0,
+          "displayedName": "Game",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/Game",
+          "position": {
+            "x": 1344.6949209844058,
+            "y": 1138.0784416479294
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n192",
+          "type": "class",
+          "originalId": "n192",
+          "diagramId": 0,
+          "displayedName": "Game event",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/GameEvent",
+          "position": {
+            "x": 646.7137801564086,
+            "y": 1145.0940129352634
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n193",
+          "type": "data-property",
+          "originalId": "n193",
+          "diagramId": 0,
+          "displayedName": "game event ID",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/gameEventID",
+          "position": {
+            "x": 746.406667121698,
+            "y": 1206.7511643408432
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n195",
+          "type": "data-property",
+          "originalId": "n195",
+          "diagramId": 0,
+          "displayedName": "game event date",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/gameEventDate",
+          "position": {
+            "x": 553.3095461099292,
+            "y": 1273.9574352905402
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n197",
+          "type": "data-property",
+          "originalId": "n197",
+          "diagramId": 0,
+          "displayedName": "game event type",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/gameEventType",
+          "position": {
+            "x": 512.8982849232963,
+            "y": 1178.5529968546455
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n199",
+          "type": "data-property",
+          "originalId": "n199",
+          "diagramId": 0,
+          "displayedName": "game event description",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/gameEventDescription",
+          "position": {
+            "x": 535.2208822128663,
+            "y": 1077.5952962786116
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n202",
+          "type": "data-property",
+          "originalId": "n202",
+          "diagramId": 0,
+          "displayedName": "game event minute",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/gameEventMinute",
+          "position": {
+            "x": 667.2117675670156,
+            "y": 1288.9330322542207
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n208",
+          "type": "disjoint-union",
+          "diagramId": 0,
+          "position": {
+            "x": 300.3211794245055,
+            "y": 1193.3999893371426
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "id": "n209",
+          "type": "class",
+          "originalId": "n209",
+          "diagramId": 0,
+          "displayedName": "Cards",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/Cards",
+          "position": {
+            "x": 81.620632323225,
+            "y": 1148.44383580469
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n211",
+          "type": "class",
+          "originalId": "n211",
+          "diagramId": 0,
+          "displayedName": "Goals",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/Goals",
+          "position": {
+            "x": 235.19246694072743,
+            "y": 1364.0928526140065
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n213",
+          "type": "class",
+          "originalId": "n213",
+          "diagramId": 0,
+          "displayedName": "Substitutions",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/Substitutions",
+          "position": {
+            "x": 177.27606218872606,
+            "y": 1048.924138623825
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n215",
+          "type": "class",
+          "originalId": "n215",
+          "diagramId": 0,
+          "displayedName": "Shootout",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/Shootout",
+          "position": {
+            "x": 99.72246196183544,
+            "y": 1295.9178328318646
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n219",
+          "type": "data-property",
+          "originalId": "n219",
+          "diagramId": 0,
+          "displayedName": "game season",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/gameSeason",
+          "position": {
+            "x": 1168.1922742019112,
+            "y": 1161.3876129632765
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n221",
+          "type": "data-property",
+          "originalId": "n221",
+          "diagramId": 0,
+          "displayedName": "game round",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/gameRound",
+          "position": {
+            "x": 1460.0274307645116,
+            "y": 1121.945358116796
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n223",
+          "type": "data-property",
+          "originalId": "n223",
+          "diagramId": 0,
+          "displayedName": "game date",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/gameDate",
+          "position": {
+            "x": 1294.640180980328,
+            "y": 1042.1468941725336
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n225",
+          "type": "data-property",
+          "originalId": "n225",
+          "diagramId": 0,
+          "displayedName": "game ID",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/gameID",
+          "position": {
+            "x": 1540.7205421256504,
+            "y": 1171.5685269358148
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n229",
+          "type": "data-property",
+          "originalId": "n229",
+          "diagramId": 0,
+          "displayedName": "home club goals",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/homeClubGoals",
+          "position": {
+            "x": 1194.1996564518515,
+            "y": 1240.7807586460642
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n231",
+          "type": "data-property",
+          "originalId": "n231",
+          "diagramId": 0,
+          "displayedName": "away club goals",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/awayClubGoals",
+          "position": {
+            "x": 1391.1300195886324,
+            "y": 1301.5144799841653
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n233",
+          "type": "data-property",
+          "originalId": "n233",
+          "diagramId": 0,
+          "displayedName": "home club position",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/homeClubPosition",
+          "position": {
+            "x": 1506.4237053895279,
+            "y": 1055.081549172424
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n235",
+          "type": "data-property",
+          "originalId": "n235",
+          "diagramId": 0,
+          "displayedName": "away club position",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/awayClubPosition",
+          "position": {
+            "x": 1508.3263721264682,
+            "y": 1259.9837725663774
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n237",
+          "type": "class",
+          "originalId": "n237",
+          "diagramId": 0,
+          "displayedName": "Manager",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/Manager",
+          "position": {
+            "x": 490.74697313630446,
+            "y": 645.283667546477
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n238",
+          "type": "data-property",
+          "originalId": "n238",
+          "diagramId": 0,
+          "displayedName": "manager name",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/managerName",
+          "position": {
+            "x": 343.52675270776854,
+            "y": 566.2496693700481
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n242",
+          "type": "data-property",
+          "originalId": "n242",
+          "diagramId": 0,
+          "displayedName": "game attendance",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/gameAttendance",
+          "position": {
+            "x": 1424.0223600296952,
+            "y": 1220.9038267898177
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n245",
+          "type": "class",
+          "originalId": "n245",
+          "diagramId": 0,
+          "displayedName": "Referee",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/Referee",
+          "position": {
+            "x": 1904.727571973495,
+            "y": 1565.931001265017
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n246",
+          "type": "data-property",
+          "originalId": "n246",
+          "diagramId": 0,
+          "displayedName": "referee name",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/refereeName",
+          "position": {
+            "x": 2037.4263828461005,
+            "y": 1660.6651409647422
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n249",
+          "type": "data-property",
+          "originalId": "n249",
+          "diagramId": 0,
+          "displayedName": "game URL",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/gameURL",
+          "position": {
+            "x": 1225.251332652649,
+            "y": 1098.6419170670808
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n251",
+          "type": "data-property",
+          "originalId": "n251",
+          "diagramId": 0,
+          "displayedName": "home club formation",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/homeClubFormation",
+          "position": {
+            "x": 1318.4459191119893,
+            "y": 1237.9119458330217
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n253",
+          "type": "data-property",
+          "originalId": "n253",
+          "diagramId": 0,
+          "displayedName": "away club formation",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/awayClubFormation",
+          "position": {
+            "x": 1401.8207275051338,
+            "y": 1028.7384559175728
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n255",
+          "type": "data-property",
+          "originalId": "n255",
+          "diagramId": 0,
+          "displayedName": "aggregate score",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/aggregateScore",
+          "position": {
+            "x": 1262.1006576590792,
+            "y": 1293.465960230432
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n257",
+          "type": "class",
+          "originalId": "n257",
+          "diagramId": 0,
+          "displayedName": "Game lineup",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/GameLineup",
+          "position": {
+            "x": 1416.3725051098336,
+            "y": 1556.5769038291844
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n258",
+          "type": "data-property",
+          "originalId": "n258",
+          "diagramId": 0,
+          "displayedName": "game lineup ID",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/gameLineupID",
+          "position": {
+            "x": 1432.4604190626005,
+            "y": 1695.493122705632
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n262",
+          "type": "disjoint-union",
+          "diagramId": 0,
+          "position": {
+            "x": 1545.7273569501285,
+            "y": 1854.4240117109887
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        {
+          "id": "n263",
+          "type": "class",
+          "originalId": "n263",
+          "diagramId": 0,
+          "displayedName": "Substitutes",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/Substitutes",
+          "position": {
+            "x": 1545.00139347267,
+            "y": 2066.0276684300516
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n265",
+          "type": "class",
+          "originalId": "n265",
+          "diagramId": 0,
+          "displayedName": "Starting lineup",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/StartingLineup",
+          "position": {
+            "x": 1705.7359448661055,
+            "y": 1989.2209617889494
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n268",
+          "type": "data-property",
+          "originalId": "n268",
+          "diagramId": 0,
+          "displayedName": "number",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/number",
+          "position": {
+            "x": 1301.4387414650644,
+            "y": 1629.608406258563
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n270",
+          "type": "class",
+          "originalId": "n270",
+          "diagramId": 0,
+          "displayedName": "Team captain",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/TeamCaptain",
+          "position": {
+            "x": 1319.0335821529552,
+            "y": 1776.2022581463777
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -18
+          }
+        },
+        {
+          "id": "n272",
+          "type": "data-property",
+          "originalId": "n272",
+          "diagramId": 0,
+          "displayedName": "lineup position",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/lineupPosition",
+          "position": {
+            "x": 1532.0261231536324,
+            "y": 1639.6140104872309
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n280",
+          "type": "data-property",
+          "originalId": "n280",
+          "diagramId": 0,
+          "displayedName": "stadium location",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/stadium_location",
+          "position": {
+            "x": 1985.8521655505544,
+            "y": 1229.9165972317571
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n282",
+          "type": "data-property",
+          "originalId": "n282",
+          "diagramId": 0,
+          "displayedName": "stadium latitude",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/stadium_latitude",
+          "position": {
+            "x": 2008.195866361855,
+            "y": 1030.6684912254775
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        },
+        {
+          "id": "n284",
+          "type": "data-property",
+          "originalId": "n284",
+          "diagramId": 0,
+          "displayedName": "stadium longitude",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/stadium_longitude",
+          "position": {
+            "x": 2092.5991865025244,
+            "y": 1084.95617848258
+          },
+          "labelPosition": {
+            "x": 0,
+            "y": -15
+          }
+        }
+      ],
+      "edges": [
+        {
+          "id": "e3",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n",
+          "targetId": "n2",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e5",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n",
+          "targetId": "n4",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e7",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n",
+          "targetId": "n6",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e9",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n",
+          "targetId": "n8",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e11",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n",
+          "targetId": "n10",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e13",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n",
+          "targetId": "n12",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e15",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n",
+          "targetId": "n14",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e17",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n",
+          "targetId": "n16",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e19",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n",
+          "targetId": "n18",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e21",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n",
+          "targetId": "n20",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e23",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n",
+          "targetId": "n22",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e25",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n",
+          "targetId": "n24",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e27",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n",
+          "targetId": "n26",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e30",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n28",
+          "targetId": "n29",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e32",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n28",
+          "targetId": "n31",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e34",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n28",
+          "targetId": "n33",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e36",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n28",
+          "targetId": "n35",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e38",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n28",
+          "targetId": "n37",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e40",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n28",
+          "targetId": "n39",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e42",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n28",
+          "targetId": "n41",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e44",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n28",
+          "targetId": "n43",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e46",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n28",
+          "targetId": "n45",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e48",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n28",
+          "targetId": "n47",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e50",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n28",
+          "targetId": "n49",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e51",
+          "type": "object-property",
+          "originalId": "e51",
+          "diagramId": 0,
+          "displayedName": "current club",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/currentClub",
+          "sourceId": "n",
+          "targetId": "n28",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "rangeMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e54",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n52",
+          "targetId": "n53",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e55",
+          "type": "object-property",
+          "originalId": "e55",
+          "diagramId": 0,
+          "displayedName": "country of birth",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/countryOfBirth",
+          "sourceId": "n",
+          "targetId": "n52",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "rangeMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e56",
+          "type": "object-property",
+          "originalId": "e56",
+          "diagramId": 0,
+          "displayedName": "country of citizenship",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/countryOfCitizenship",
+          "sourceId": "n",
+          "targetId": "n52",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "rangeMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e59",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n57",
+          "targetId": "n58",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e60",
+          "type": "object-property",
+          "originalId": "e60",
+          "diagramId": 0,
+          "displayedName": "city in country",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/cityInCountry",
+          "sourceId": "n57",
+          "targetId": "n52",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "rangeMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e61",
+          "type": "object-property",
+          "originalId": "e61",
+          "diagramId": 0,
+          "displayedName": "city of birth",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/cityOfBirth",
+          "sourceId": "n",
+          "targetId": "n57",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "rangeMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e75",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n",
+          "targetId": "n74",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e73",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n",
+          "targetId": "n72",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e72",
+          "type": "inclusion",
+          "diagramId": 0,
+          "sourceId": "n67",
+          "targetId": "n",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e74",
+          "type": "inclusion",
+          "diagramId": 0,
+          "sourceId": "n65",
+          "targetId": "n",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e76",
+          "type": "inclusion",
+          "diagramId": 0,
+          "sourceId": "n63",
+          "targetId": "n",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e77",
+          "type": "inclusion",
+          "diagramId": 0,
+          "sourceId": "n69",
+          "targetId": "n",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e78",
+          "type": "input",
+          "diagramId": 0,
+          "sourceId": "n76",
+          "targetId": "n75",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e79",
+          "type": "input",
+          "diagramId": 0,
+          "sourceId": "n77",
+          "targetId": "n75",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e80",
+          "type": "input",
+          "diagramId": 0,
+          "sourceId": "n79",
+          "targetId": "n75",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e82",
+          "type": "input",
+          "diagramId": 0,
+          "sourceId": "n81",
+          "targetId": "n75",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e83",
+          "type": "complete-disjoint-union",
+          "diagramId": 0,
+          "sourceId": "n75",
+          "targetId": "n63",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e86",
+          "type": "input",
+          "diagramId": 0,
+          "sourceId": "n85",
+          "targetId": "n84",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e88",
+          "type": "input",
+          "diagramId": 0,
+          "sourceId": "n87",
+          "targetId": "n84",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e90",
+          "type": "input",
+          "diagramId": 0,
+          "sourceId": "n89",
+          "targetId": "n84",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e91",
+          "type": "complete-disjoint-union",
+          "diagramId": 0,
+          "sourceId": "n84",
+          "targetId": "n67",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e94",
+          "type": "input",
+          "diagramId": 0,
+          "sourceId": "n93",
+          "targetId": "n92",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e96",
+          "type": "input",
+          "diagramId": 0,
+          "sourceId": "n95",
+          "targetId": "n92",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e98",
+          "type": "input",
+          "diagramId": 0,
+          "sourceId": "n97",
+          "targetId": "n92",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e100",
+          "type": "input",
+          "diagramId": 0,
+          "sourceId": "n99",
+          "targetId": "n92",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e102",
+          "type": "input",
+          "diagramId": 0,
+          "sourceId": "n101",
+          "targetId": "n92",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e103",
+          "type": "complete-disjoint-union",
+          "diagramId": 0,
+          "sourceId": "n92",
+          "targetId": "n69",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e106",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n104",
+          "targetId": "n105",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e107",
+          "type": "object-property",
+          "originalId": "e107",
+          "diagramId": 0,
+          "displayedName": "has agent",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/hasAgent",
+          "sourceId": "n",
+          "targetId": "n104",
+          "breakpoints": [],
+          "rangeMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e111",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n109",
+          "targetId": "n110",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e113",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n109",
+          "targetId": "n112",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e114",
+          "type": "object-property",
+          "originalId": "e114",
+          "diagramId": 0,
+          "displayedName": "club stadium",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/clubStadium",
+          "sourceId": "n28",
+          "targetId": "n109",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "rangeMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e116",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n108",
+          "targetId": "n115",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e118",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n108",
+          "targetId": "n117",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e120",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n108",
+          "targetId": "n119",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e122",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n108",
+          "targetId": "n121",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e124",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n108",
+          "targetId": "n123",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e126",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n108",
+          "targetId": "n125",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e129",
+          "type": "input",
+          "diagramId": 0,
+          "sourceId": "n128",
+          "targetId": "n127",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e131",
+          "type": "input",
+          "diagramId": 0,
+          "sourceId": "n130",
+          "targetId": "n127",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e133",
+          "type": "input",
+          "diagramId": 0,
+          "sourceId": "n132",
+          "targetId": "n127",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e134",
+          "type": "disjoint-union",
+          "diagramId": 0,
+          "sourceId": "n127",
+          "targetId": "n108",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e136",
+          "type": "inclusion",
+          "diagramId": 0,
+          "sourceId": "n135",
+          "targetId": "n130",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e139",
+          "type": "input",
+          "diagramId": 0,
+          "sourceId": "n138",
+          "targetId": "n137",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e141",
+          "type": "input",
+          "diagramId": 0,
+          "sourceId": "n140",
+          "targetId": "n137",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e143",
+          "type": "input",
+          "diagramId": 0,
+          "sourceId": "n142",
+          "targetId": "n137",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e145",
+          "type": "input",
+          "diagramId": 0,
+          "sourceId": "n144",
+          "targetId": "n137",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e147",
+          "type": "input",
+          "diagramId": 0,
+          "sourceId": "n146",
+          "targetId": "n137",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e148",
+          "type": "complete-disjoint-union",
+          "diagramId": 0,
+          "sourceId": "n137",
+          "targetId": "n132",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e150",
+          "type": "inclusion",
+          "diagramId": 0,
+          "sourceId": "n149",
+          "targetId": "n108",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e152",
+          "type": "inclusion",
+          "diagramId": 0,
+          "sourceId": "n151",
+          "targetId": "n108",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e154",
+          "type": "inclusion",
+          "diagramId": 0,
+          "sourceId": "n153",
+          "targetId": "n108",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e156",
+          "type": "inclusion",
+          "diagramId": 0,
+          "sourceId": "n155",
+          "targetId": "n108",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e157",
+          "type": "object-property",
+          "originalId": "e157",
+          "diagramId": 0,
+          "displayedName": "domestic competition",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/domesticCompetition",
+          "sourceId": "n28",
+          "targetId": "n108",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e159",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n52",
+          "targetId": "n158",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e160",
+          "type": "object-property",
+          "originalId": "e160",
+          "diagramId": 0,
+          "displayedName": "competition in country",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/competitionInCountry",
+          "sourceId": "n108",
+          "targetId": "n52",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e163",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n161",
+          "targetId": "n162",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e164",
+          "type": "object-property",
+          "originalId": "e164",
+          "diagramId": 0,
+          "displayedName": "competition in confederation",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/competitionInConfederation",
+          "sourceId": "n108",
+          "targetId": "n161",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "rangeMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e166",
+          "type": "object-property",
+          "originalId": "e166",
+          "diagramId": 0,
+          "displayedName": "valuation for player",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/valuationForPlayer",
+          "sourceId": "n165",
+          "targetId": "n",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e168",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n165",
+          "targetId": "n167",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e170",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n165",
+          "targetId": "n169",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e171",
+          "type": "object-property",
+          "originalId": "e171",
+          "diagramId": 0,
+          "displayedName": "valuation current club",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/valuationCurrentClub",
+          "sourceId": "n165",
+          "targetId": "n28",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e172",
+          "type": "object-property",
+          "originalId": "e172",
+          "diagramId": 0,
+          "displayedName": "valuation player domestic competition",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/valuationPlayerDomesticCompetition",
+          "sourceId": "n165",
+          "targetId": "n108",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e175",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n173",
+          "targetId": "n174",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e177",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n173",
+          "targetId": "n176",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e179",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n173",
+          "targetId": "n178",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e181",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n173",
+          "targetId": "n180",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e183",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n173",
+          "targetId": "n182",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e185",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n173",
+          "targetId": "n184",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e187",
+          "type": "object-property",
+          "originalId": "e187",
+          "diagramId": 0,
+          "displayedName": "appearance in game",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/appearanceInGame",
+          "sourceId": "n173",
+          "targetId": "n186",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "rangeMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e188",
+          "type": "object-property",
+          "originalId": "e188",
+          "diagramId": 0,
+          "displayedName": "appearance by player",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/appearanceByPlayer",
+          "sourceId": "n173",
+          "targetId": "n",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "rangeMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e189",
+          "type": "object-property",
+          "originalId": "e189",
+          "diagramId": 0,
+          "displayedName": "appearance player club",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/appearancePlayerClub",
+          "sourceId": "n173",
+          "targetId": "n28",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "rangeMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e190",
+          "type": "object-property",
+          "originalId": "e190",
+          "diagramId": 0,
+          "displayedName": "appearance player current club",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/appearancePlayerCurrentClub",
+          "sourceId": "n173",
+          "targetId": "n28",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e191",
+          "type": "object-property",
+          "originalId": "e191",
+          "diagramId": 0,
+          "displayedName": "appearance in competition",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/appearanceInCompetition",
+          "sourceId": "n173",
+          "targetId": "n108",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e194",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n192",
+          "targetId": "n193",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e196",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n192",
+          "targetId": "n195",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e198",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n192",
+          "targetId": "n197",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e200",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n192",
+          "targetId": "n199",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e201",
+          "type": "object-property",
+          "originalId": "e201",
+          "diagramId": 0,
+          "displayedName": "game event in game",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/gameEventInGame",
+          "sourceId": "n192",
+          "targetId": "n186",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "rangeMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e203",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n192",
+          "targetId": "n202",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e204",
+          "type": "object-property",
+          "originalId": "e204",
+          "diagramId": 0,
+          "displayedName": "game event by player club",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/gameEventByPlayerClub",
+          "sourceId": "n192",
+          "targetId": "n28",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e205",
+          "type": "object-property",
+          "originalId": "e205",
+          "diagramId": 0,
+          "displayedName": "game event by player",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/gameEventByPlayer",
+          "sourceId": "n192",
+          "targetId": "n",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e206",
+          "type": "object-property",
+          "originalId": "e206",
+          "diagramId": 0,
+          "displayedName": "player in game event",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/playerInGameEvent",
+          "sourceId": "n192",
+          "targetId": "n",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e207",
+          "type": "object-property",
+          "originalId": "e207",
+          "diagramId": 0,
+          "displayedName": "player assist in game event",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/playerAssistInGameEvent",
+          "sourceId": "n192",
+          "targetId": "n",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e210",
+          "type": "input",
+          "diagramId": 0,
+          "sourceId": "n209",
+          "targetId": "n208",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e212",
+          "type": "input",
+          "diagramId": 0,
+          "sourceId": "n211",
+          "targetId": "n208",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e214",
+          "type": "input",
+          "diagramId": 0,
+          "sourceId": "n213",
+          "targetId": "n208",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e216",
+          "type": "input",
+          "diagramId": 0,
+          "sourceId": "n215",
+          "targetId": "n208",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e217",
+          "type": "complete-disjoint-union",
+          "diagramId": 0,
+          "sourceId": "n208",
+          "targetId": "n192",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e218",
+          "type": "object-property",
+          "originalId": "e218",
+          "diagramId": 0,
+          "displayedName": "game in competition",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/gameInCompetition",
+          "sourceId": "n186",
+          "targetId": "n108",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e220",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n186",
+          "targetId": "n219",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e222",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n186",
+          "targetId": "n221",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e224",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n186",
+          "targetId": "n223",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e226",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n186",
+          "targetId": "n225",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e227",
+          "type": "object-property",
+          "originalId": "e227",
+          "diagramId": 0,
+          "displayedName": "home club in game",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/homeClubInGame",
+          "sourceId": "n186",
+          "targetId": "n28",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "rangeMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e228",
+          "type": "object-property",
+          "originalId": "e228",
+          "diagramId": 0,
+          "displayedName": "away club in game",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/awayClubInGame",
+          "sourceId": "n186",
+          "targetId": "n28",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "rangeMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e230",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n186",
+          "targetId": "n229",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e232",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n186",
+          "targetId": "n231",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e234",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n186",
+          "targetId": "n233",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e236",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n186",
+          "targetId": "n235",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e239",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n237",
+          "targetId": "n238",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e240",
+          "type": "object-property",
+          "originalId": "e240",
+          "diagramId": 0,
+          "displayedName": "home club manager",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/homeClubManager",
+          "sourceId": "n186",
+          "targetId": "n237",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e241",
+          "type": "object-property",
+          "originalId": "e241",
+          "diagramId": 0,
+          "displayedName": "away club manager",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/awayClubManager",
+          "sourceId": "n186",
+          "targetId": "n237",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e243",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n186",
+          "targetId": "n242",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e244",
+          "type": "object-property",
+          "originalId": "e244",
+          "diagramId": 0,
+          "displayedName": "game played in stadium",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/gamePlayedInStadium",
+          "sourceId": "n186",
+          "targetId": "n109",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "rangeMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e247",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n245",
+          "targetId": "n246",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e248",
+          "type": "object-property",
+          "originalId": "e248",
+          "diagramId": 0,
+          "displayedName": "game refereed by",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/gameRefereedBy",
+          "sourceId": "n186",
+          "targetId": "n245",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "rangeMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e250",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n186",
+          "targetId": "n249",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e252",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n186",
+          "targetId": "n251",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e254",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n186",
+          "targetId": "n253",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e256",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n186",
+          "targetId": "n255",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e259",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n257",
+          "targetId": "n258",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e260",
+          "type": "object-property",
+          "originalId": "e260",
+          "diagramId": 0,
+          "displayedName": "lineup for game",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/lineupForGame",
+          "sourceId": "n257",
+          "targetId": "n186",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "rangeMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e261",
+          "type": "object-property",
+          "originalId": "e261",
+          "diagramId": 0,
+          "displayedName": "lineup by club",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/lineupByClub",
+          "sourceId": "n257",
+          "targetId": "n28",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "rangeMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e264",
+          "type": "input",
+          "diagramId": 0,
+          "sourceId": "n263",
+          "targetId": "n262",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e266",
+          "type": "input",
+          "diagramId": 0,
+          "sourceId": "n265",
+          "targetId": "n262",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e267",
+          "type": "complete-disjoint-union",
+          "diagramId": 0,
+          "sourceId": "n262",
+          "targetId": "n257",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e269",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n257",
+          "targetId": "n268",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e271",
+          "type": "inclusion",
+          "diagramId": 0,
+          "sourceId": "n270",
+          "targetId": "n257",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e273",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n257",
+          "targetId": "n272",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e274",
+          "type": "object-property",
+          "originalId": "e274",
+          "diagramId": 0,
+          "displayedName": "lineup fpr player",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/lineupFprPlayer",
+          "sourceId": "n257",
+          "targetId": "n",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "rangeMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e275",
+          "type": "object-property",
+          "originalId": "e275",
+          "diagramId": 0,
+          "displayedName": "plays in game",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/plays_in_game",
+          "sourceId": "n",
+          "targetId": "n186",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "rangeMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e276",
+          "type": "object-property",
+          "originalId": "e276",
+          "diagramId": 0,
+          "displayedName": "manages",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/manages",
+          "sourceId": "n237",
+          "targetId": "n28",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "rangeMandatory": true,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e277",
+          "type": "object-property",
+          "originalId": "e277",
+          "diagramId": 0,
+          "displayedName": "player club career",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/player_club_career",
+          "sourceId": "n",
+          "targetId": "n28",
+          "breakpoints": [],
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e278",
+          "type": "object-property",
+          "originalId": "e278",
+          "diagramId": 0,
+          "displayedName": "plays in city",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/plays_in_city",
+          "sourceId": "n28",
+          "targetId": "n57",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "rangeMandatory": false,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e279",
+          "type": "object-property",
+          "originalId": "e279",
+          "diagramId": 0,
+          "displayedName": "stadium in city",
+          "iri": "http://obdasystems.com/ontology/transfermarkt/stadium_in_city",
+          "sourceId": "n109",
+          "targetId": "n57",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "rangeMandatory": false,
+          "domainTyped": true,
+          "rangeTyped": true
+        },
+        {
+          "id": "e281",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n109",
+          "targetId": "n280",
+          "breakpoints": [],
+          "domainMandatory": true,
+          "domainTyped": true
+        },
+        {
+          "id": "e283",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n109",
+          "targetId": "n282",
+          "breakpoints": [],
+          "domainMandatory": false,
+          "domainTyped": true
+        },
+        {
+          "id": "e285",
+          "type": "attribute-edge",
+          "diagramId": 0,
+          "sourceId": "n109",
+          "targetId": "n284",
+          "breakpoints": [],
+          "domainMandatory": false,
+          "domainTyped": true
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/Player",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Player",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/playerID",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "player ID",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:integer",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/firstName",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "first name",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/lastName",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "last name",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/fullName",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "full name",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/lastSeason",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "last season",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:integer",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/playerCode",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "player code",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/birthDate",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "birth date",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/foot",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "foot",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/height",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "height",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:integer",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/currentMarketValue",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "current market value",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:integer",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/highestMarketValue",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "highest market value",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:integer",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/Club",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Club",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/clubID",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "club ID",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:integer",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/clubCode",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "club code",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/clubName",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "club name",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/squadSize",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "squad size",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:integer",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/averageAge",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "average age",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:decimal",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/numberOfForeigners",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "number of foreigners",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:integer",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/percentageOfForeigners",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "percentage of foreigners",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:decimal",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/numberOfCurrentNationalTeamPlayers",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "number of current national team players",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:integer",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/netTransferRecord",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "net transfer record",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/clubLastSeason",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "club last season",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:integer",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/clubURL",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "club URL",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/currentClub",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "current club",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/Country",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Country",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/countryName",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "country name",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/countryOfBirth",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "country of birth",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/countryOfCitizenship",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "country of citizenship",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/City",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "City",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/cityName",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "city name",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/cityInCountry",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "city in country",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/cityOfBirth",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "city of birth",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/Attack",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Attack",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/Goalkeeper",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Goalkeeper",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/Defender",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Defender",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/Midfleld",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Midfleld",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/subPosition",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "sub position",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/CentreForward",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Centre forward",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/LeftWinger",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Left winger",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/SecondStriker",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Second striker",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/RightWinger",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Right winger",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/CentreBack",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Centre back",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/LeftBack",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Left back",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/RightBack",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Right back",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/AttackingMidfield",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Attacking midfield",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/CentralMidfield",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Central midfield",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/DefensiveMidfield",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Defensive midfield",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/LeftMidfield",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Left midfield",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/RightMidfield",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Right midfield",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/Agent",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Agent",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/agentName",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "agent name",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/hasAgent",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "has agent",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/Competition",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Competition",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/Stadium",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Stadium",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/stadiumName",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "stadium name",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/stadiumSeats",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "stadium seats",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:integer",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/clubStadium",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "club stadium",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/competitionID",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "competition ID",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/competitionCode",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "competition code",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/competitionName",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "competition name",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/competitionSubType",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "competition sub type",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/competitionType",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "competition type",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/competitionURL",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "competition URL",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/DomesticCup",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Domestic cup",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/DomesticLeague",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Domestic league",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/InternationalCup",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "International cup",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/FirstTier",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "First tier",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/EuropaLeague",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Europa league",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/EuropaLeagueQualifying",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Europa league qualifying",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/UEFAEuropaConferenceLeagueQualifiers",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "UEFAEuropa conference league qualifiers",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/UEFAChampionsLeague",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "UEFAChampions league",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/UEFAChampionsLeagueQualifying",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "UEFAChampions league qualifying",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/DomesticSuperCup",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Domestic super cup",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/UEFASuperCup",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "UEFASuper cup",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/LeagueCup",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "League cup",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/FIFAClubWorldCup",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "FIFAClub world cup",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/domesticCompetition",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "domestic competition",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/countryID",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "country ID",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/competitionInCountry",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "competition in country",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/Confederation",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Confederation",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/confederationName",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "confederation name",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/competitionInConfederation",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "competition in confederation",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/PlayerValuation",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Player valuation",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/valuationForPlayer",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "valuation for player",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/marketValueInEuro",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "market value in euro",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:integer",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/valuationCurrentClub",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "valuation current club",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/valuationPlayerDomesticCompetition",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "valuation player domestic competition",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/Appearance",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Appearance",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/yellowCards",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "yellow cards",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:integer",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/redCards",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "red cards",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:integer",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/goals",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "goals",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:integer",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/assists",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "assists",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:integer",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/minutesPlayed",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "minutes played",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:integer",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/Game",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Game",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/appearanceInGame",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "appearance in game",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/appearanceByPlayer",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "appearance by player",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/appearancePlayerClub",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "appearance player club",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/appearancePlayerCurrentClub",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "appearance player current club",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/appearanceInCompetition",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "appearance in competition",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/GameEvent",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Game event",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/gameEventID",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "game event ID",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/gameEventType",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "game event type",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/gameEventDescription",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "game event description",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/gameEventInGame",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "game event in game",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/gameEventMinute",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "game event minute",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:integer",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/gameEventByPlayerClub",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "game event by player club",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/gameEventByPlayer",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "game event by player",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/playerInGameEvent",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "player in game event",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/playerAssistInGameEvent",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "player assist in game event",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/Cards",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Cards",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/Goals",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Goals",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/Substitutions",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Substitutions",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/Shootout",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Shootout",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/gameInCompetition",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "game in competition",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/gameSeason",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "game season",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:integer",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/gameRound",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "game round",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/gameDate",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "game date",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/playerValuationDate",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "player valuation date",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/appearanceDate",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "appearance date",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/gameEventDate",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "game event date",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/gameID",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "game ID",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:integer",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/homeClubInGame",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "home club in game",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/awayClubInGame",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "away club in game",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/homeClubGoals",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "home club goals",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:integer",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/awayClubGoals",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "away club goals",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:integer",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/homeClubPosition",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "home club position",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:integer",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/awayClubPosition",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "away club position",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:integer",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/Manager",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Manager",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/managerName",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "manager name",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/homeClubManager",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "home club manager",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/awayClubManager",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "away club manager",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/gameAttendance",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "game attendance",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:integer",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/gamePlayedInStadium",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "game played in stadium",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/Referee",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Referee",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/refereeName",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "referee name",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/gameRefereedBy",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "game refereed by",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/gameURL",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "game URL",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/homeClubFormation",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "home club formation",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/awayClubFormation",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "away club formation",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/aggregateScore",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "aggregate score",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/GameLineup",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Game lineup",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/gameLineupID",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "game lineup ID",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/lineupForGame",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "lineup for game",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/lineupByClub",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "lineup by club",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/Substitutes",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Substitutes",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/StartingLineup",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Starting lineup",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/number",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "number",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:integer",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/TeamCaptain",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "Team captain",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/playerPosition",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "player position",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/lineupPosition",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "lineup position",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/lineupFprPlayer",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "lineup fpr player",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/imageURL",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "image URL",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:anyURI",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/playerURL",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "player URL",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:anyURI",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/plays_in_game",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "plays in game",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/manages",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "manages",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/player_club_career",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "player club career",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/plays_in_city",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "plays in city",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/stadium_in_city",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "stadium in city",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "functionProperties": [
+        "functional"
+      ],
+      "isDataPropertyFunctional": false
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/stadium_location",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "stadium location",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:string",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/stadium_latitude",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "stadium latitude",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:double",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    },
+    {
+      "fullIri": "http://obdasystems.com/ontology/transfermarkt/stadium_longitude",
+      "annotations": [
+        {
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "value": "stadium longitude",
+          "language": "en",
+          "datatype": "rdf:PlainLiteral",
+          "hasIriValue": false
+        }
+      ],
+      "datatype": "xsd:double",
+      "functionProperties": [],
+      "isDataPropertyFunctional": true
+    }
+  ],
+  "modelType": "ontology",
+  "metadata": {
+    "name": "TRANSFERMARKT",
+    "version": "http://obdasystems.com/ontology/transfermarkt/1.8",
+    "namespaces": [
+      {
+        "value": "http://obdasystems.com/ontology/transfermarkt/",
+        "prefixes": [
+          ""
+        ]
+      },
+      {
+        "value": "http://www.w3.org/2000/01/rdf-schema#",
+        "prefixes": [
+          "rdfs"
+        ]
+      },
+      {
+        "value": "http://www.w3.org/2002/07/owl#",
+        "prefixes": [
+          "owl"
+        ]
+      },
+      {
+        "value": "http://obdasystems.com/ontology/transfermarkt/",
+        "prefixes": [
+          ""
+        ]
+      },
+      {
+        "value": "http://www.w3.org/2000/01/rdf-schema#",
+        "prefixes": [
+          "rdfs"
+        ]
+      },
+      {
+        "value": "http://www.w3.org/2002/07/owl#",
+        "prefixes": [
+          "owl"
+        ]
+      },
+      {
+        "value": "http://obdasystems.com/ontology/transfermarkt/",
+        "prefixes": [
+          ""
+        ]
+      },
+      {
+        "value": "http://www.w3.org/2000/01/rdf-schema#",
+        "prefixes": [
+          "rdfs"
+        ]
+      },
+      {
+        "value": "http://www.w3.org/2002/07/owl#",
+        "prefixes": [
+          "owl"
+        ]
+      },
+      {
+        "value": "http://obdasystems.com/ontology/transfermarkt/",
+        "prefixes": [
+          ""
+        ]
+      },
+      {
+        "value": "http://www.w3.org/2000/01/rdf-schema#",
+        "prefixes": [
+          "rdfs"
+        ]
+      },
+      {
+        "value": "http://www.w3.org/2002/07/owl#",
+        "prefixes": [
+          "owl"
+        ]
+      }
+    ],
+    "iri": "http://obdasystems.com/ontology/transfermarkt/",
+    "defaultLanguage": "en",
+    "languages": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "it"
+    ],
+    "annotations": [],
+    "annotationProperties": [
+      "http://www.w3.org/2000/01/rdf-schema#label",
+      "http://www.w3.org/2000/01/rdf-schema#comment",
+      "http://www.w3.org/2000/01/rdf-schema#author",
+      "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+      "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+      "http://www.w3.org/2002/07/owl#deprecated",
+      "http://www.w3.org/2002/07/owl#versionInfo",
+      "http://www.w3.org/2002/07/owl#priorVersion",
+      "http://www.w3.org/2002/07/owl#backCompatibleWith",
+      "http://www.w3.org/2002/07/owl#incompatibleWith"
+    ]
+  },
+  "constraints": [],
+  "selectedDiagramId": 0,
+  "creator": "admin"
+}

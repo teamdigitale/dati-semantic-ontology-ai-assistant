@@ -1,0 +1,56 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ai_assistant"
+version = "0.1.dev0"
+authors = [
+    { name="OBDA Systems", email="info@obdasystems.com" },
+]
+description = "AI designer tool for helping building ontologies"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    # "lightrag-hku @ {root:parent:uri}",  # Use downstream LightRAG core fork
+    "lightrag-hku == 1.4.0",  # Use upstream LightRAG core
+    "fastapi[standard]",
+    "future",
+    "jpype1",
+    "networkx",
+    "numpy",
+    "openai",
+    "pipmaster",
+    "python-dotenv",
+    "pyvis",
+    "tenacity",
+    "tiktoken",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+dev = [
+    "bpython",
+    "build",
+    "rich",
+]
+tests = [
+    "pytest>=7.0.0",
+]
+
+[project.scripts]
+ai_assistant = "ai_assistant.cli:main"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.black]
+line-length = 100
+preview = true
+unstable = true
+
+[tool.pyright]
+reportWildcardImportFromLibrary = "none"

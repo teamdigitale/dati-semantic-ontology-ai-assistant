@@ -1,0 +1,55 @@
+# Python-related files
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+*.tgz
+*.tar.gz
+*.ini
+
+# Virtual Environment
+.venv/
+env/
+venv/
+*.env*
+.env_example
+
+# Build / Distribution
+dist/
+build/
+site/
+
+# Logs / Reports
+*.log
+*.log.*
+*.logfire
+*.coverage/
+log/
+logs/
+
+# Caches
+.cache/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.gradio/
+.history/
+temp/
+
+# IDE / Editor Files
+.idea/
+.vscode/
+.vscode/settings.json
+
+# Data & Storage
+inputs/
+input/
+output*/
+rag_storage/
+examples/input/
+examples/output/
+repo/
+
+# Miscellaneous
+.DS_Store
+TODO.md

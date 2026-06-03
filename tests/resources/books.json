@@ -1,0 +1,1520 @@
+{
+  "diagrams": [
+    {
+      "id": 0,
+      "name": "Diagram",
+      "nodes": [
+        {
+          "id": "n0",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/AudioBook",
+          "type": "class",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n1",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/Author",
+          "type": "class",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n2",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/Book",
+          "type": "class",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n3",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/ClassicBook",
+          "type": "class",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n4",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/E-Book",
+          "type": "class",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n5",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/EconomicEdition",
+          "type": "class",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n6",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/Edition",
+          "type": "class",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n7",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/EmergingWriter",
+          "type": "class",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n8",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/Person",
+          "type": "class",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n9",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/PrintedBook",
+          "type": "class",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n10",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/Publisher",
+          "type": "class",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n11",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/ScientificBook",
+          "type": "class",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n12",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/ScientificBookRevision",
+          "type": "class",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n13",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/SpecialEdition",
+          "type": "class",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n14",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/UnpublishedBook",
+          "type": "class",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n15",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.w3.org/2002/07/owl#Thing",
+          "type": "class",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n16",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": null,
+          "type": "disjoint-union",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n13",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/SpecialEdition",
+          "type": "class",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n5",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/EconomicEdition",
+          "type": "class",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n17",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": null,
+          "type": "disjoint-union",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n9",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/PrintedBook",
+          "type": "class",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n4",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/E-Book",
+          "type": "class",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n0",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/AudioBook",
+          "type": "class",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n18",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/dateOfBirth",
+          "type": "data-property",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n19",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/dateOfPublication",
+          "type": "data-property",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n20",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/durationInSeconds",
+          "type": "data-property",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n21",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/editionNumber",
+          "type": "data-property",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n22",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/genre",
+          "type": "data-property",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n23",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/name",
+          "type": "data-property",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n24",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/numberOfPages",
+          "type": "data-property",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n25",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/penName",
+          "type": "data-property",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n26",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/priceInDollars",
+          "type": "data-property",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n27",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/scientificBookRevisionDate",
+          "type": "data-property",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n28",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/scientificTopic",
+          "type": "data-property",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n29",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/title",
+          "type": "data-property",
+          "position": null,
+          "labelPosition": null
+        },
+        {
+          "id": "n30",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/vatNumber",
+          "type": "data-property",
+          "position": null,
+          "labelPosition": null
+        }
+      ],
+      "edges": [
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": null,
+          "type": "inclusion",
+          "sourceId": "n3",
+          "targetId": "n2",
+          "breakpoints": null,
+          "domainTyped": true,
+          "rangeTyped": true,
+          "domainMandatory": false,
+          "rangeMandatory": false
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": null,
+          "type": "inclusion",
+          "sourceId": "n4",
+          "targetId": "n5",
+          "breakpoints": null,
+          "domainTyped": true,
+          "rangeTyped": true,
+          "domainMandatory": false,
+          "rangeMandatory": false
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": null,
+          "type": "inclusion",
+          "sourceId": "n7",
+          "targetId": "n1",
+          "breakpoints": null,
+          "domainTyped": true,
+          "rangeTyped": true,
+          "domainMandatory": false,
+          "rangeMandatory": false
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": null,
+          "type": "inclusion",
+          "sourceId": "n11",
+          "targetId": "n2",
+          "breakpoints": null,
+          "domainTyped": true,
+          "rangeTyped": true,
+          "domainMandatory": false,
+          "rangeMandatory": false
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": null,
+          "type": "disjoint-union",
+          "sourceId": "n16",
+          "targetId": "n6",
+          "breakpoints": null,
+          "domainTyped": true,
+          "rangeTyped": true,
+          "domainMandatory": false,
+          "rangeMandatory": false
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": null,
+          "type": "input",
+          "sourceId": "n13",
+          "targetId": "n16",
+          "breakpoints": null,
+          "domainTyped": true,
+          "rangeTyped": true,
+          "domainMandatory": false,
+          "rangeMandatory": false
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": null,
+          "type": "input",
+          "sourceId": "n5",
+          "targetId": "n16",
+          "breakpoints": null,
+          "domainTyped": true,
+          "rangeTyped": true,
+          "domainMandatory": false,
+          "rangeMandatory": false
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": null,
+          "type": "disjoint-union",
+          "sourceId": "n17",
+          "targetId": "n6",
+          "breakpoints": null,
+          "domainTyped": true,
+          "rangeTyped": true,
+          "domainMandatory": false,
+          "rangeMandatory": false
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": null,
+          "type": "input",
+          "sourceId": "n9",
+          "targetId": "n17",
+          "breakpoints": null,
+          "domainTyped": true,
+          "rangeTyped": true,
+          "domainMandatory": false,
+          "rangeMandatory": false
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": null,
+          "type": "input",
+          "sourceId": "n4",
+          "targetId": "n17",
+          "breakpoints": null,
+          "domainTyped": true,
+          "rangeTyped": true,
+          "domainMandatory": false,
+          "rangeMandatory": false
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": null,
+          "type": "input",
+          "sourceId": "n0",
+          "targetId": "n17",
+          "breakpoints": null,
+          "domainTyped": true,
+          "rangeTyped": true,
+          "domainMandatory": false,
+          "rangeMandatory": false
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": null,
+          "type": "inclusion",
+          "sourceId": "n14",
+          "targetId": "n2",
+          "breakpoints": null,
+          "domainTyped": true,
+          "rangeTyped": true,
+          "domainMandatory": false,
+          "rangeMandatory": false
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/actAsAuthor",
+          "type": "object-property",
+          "sourceId": "n8",
+          "targetId": "n1",
+          "breakpoints": null,
+          "domainTyped": true,
+          "rangeTyped": true,
+          "domainMandatory": false,
+          "rangeMandatory": true
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/actAsPublisher",
+          "type": "object-property",
+          "sourceId": "n8",
+          "targetId": "n10",
+          "breakpoints": null,
+          "domainTyped": true,
+          "rangeTyped": true,
+          "domainMandatory": false,
+          "rangeMandatory": true
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/hasBookRevision",
+          "type": "object-property",
+          "sourceId": "n11",
+          "targetId": "n12",
+          "breakpoints": null,
+          "domainTyped": false,
+          "rangeTyped": true,
+          "domainMandatory": true,
+          "rangeMandatory": true
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/hasEdition",
+          "type": "object-property",
+          "sourceId": "n2",
+          "targetId": "n6",
+          "breakpoints": null,
+          "domainTyped": true,
+          "rangeTyped": true,
+          "domainMandatory": false,
+          "rangeMandatory": false
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/publishedBy",
+          "type": "object-property",
+          "sourceId": "n6",
+          "targetId": "n10",
+          "breakpoints": null,
+          "domainTyped": true,
+          "rangeTyped": true,
+          "domainMandatory": true,
+          "rangeMandatory": false
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": "http://www.obdasystems.com/books/writtenBy",
+          "type": "object-property",
+          "sourceId": "n2",
+          "targetId": "n1",
+          "breakpoints": null,
+          "domainTyped": true,
+          "rangeTyped": true,
+          "domainMandatory": true,
+          "rangeMandatory": false
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": null,
+          "type": "attribute-edge",
+          "sourceId": "n8",
+          "targetId": "n18",
+          "breakpoints": null,
+          "domainTyped": false,
+          "rangeTyped": true,
+          "domainMandatory": true,
+          "rangeMandatory": false
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": null,
+          "type": "attribute-edge",
+          "sourceId": "n6",
+          "targetId": "n19",
+          "breakpoints": null,
+          "domainTyped": false,
+          "rangeTyped": true,
+          "domainMandatory": true,
+          "rangeMandatory": false
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": null,
+          "type": "attribute-edge",
+          "sourceId": "n0",
+          "targetId": "n20",
+          "breakpoints": null,
+          "domainTyped": true,
+          "rangeTyped": true,
+          "domainMandatory": false,
+          "rangeMandatory": false
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": null,
+          "type": "attribute-edge",
+          "sourceId": "n6",
+          "targetId": "n21",
+          "breakpoints": null,
+          "domainTyped": true,
+          "rangeTyped": true,
+          "domainMandatory": true,
+          "rangeMandatory": false
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": null,
+          "type": "attribute-edge",
+          "sourceId": "n2",
+          "targetId": "n22",
+          "breakpoints": null,
+          "domainTyped": true,
+          "rangeTyped": true,
+          "domainMandatory": true,
+          "rangeMandatory": false
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": null,
+          "type": "attribute-edge",
+          "sourceId": "n8",
+          "targetId": "n23",
+          "breakpoints": null,
+          "domainTyped": false,
+          "rangeTyped": true,
+          "domainMandatory": true,
+          "rangeMandatory": false
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": null,
+          "type": "attribute-edge",
+          "sourceId": "n9",
+          "targetId": "n24",
+          "breakpoints": null,
+          "domainTyped": true,
+          "rangeTyped": true,
+          "domainMandatory": false,
+          "rangeMandatory": false
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": null,
+          "type": "attribute-edge",
+          "sourceId": "n1",
+          "targetId": "n25",
+          "breakpoints": null,
+          "domainTyped": true,
+          "rangeTyped": true,
+          "domainMandatory": false,
+          "rangeMandatory": false
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": null,
+          "type": "attribute-edge",
+          "sourceId": "n6",
+          "targetId": "n26",
+          "breakpoints": null,
+          "domainTyped": false,
+          "rangeTyped": true,
+          "domainMandatory": true,
+          "rangeMandatory": false
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": null,
+          "type": "attribute-edge",
+          "sourceId": "n12",
+          "targetId": "n27",
+          "breakpoints": null,
+          "domainTyped": true,
+          "rangeTyped": true,
+          "domainMandatory": true,
+          "rangeMandatory": false
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": null,
+          "type": "attribute-edge",
+          "sourceId": "n11",
+          "targetId": "n28",
+          "breakpoints": null,
+          "domainTyped": false,
+          "rangeTyped": true,
+          "domainMandatory": true,
+          "rangeMandatory": false
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": null,
+          "type": "attribute-edge",
+          "sourceId": "n2",
+          "targetId": "n29",
+          "breakpoints": null,
+          "domainTyped": true,
+          "rangeTyped": true,
+          "domainMandatory": true,
+          "rangeMandatory": false
+        },
+        {
+          "id": "",
+          "originalId": null,
+          "diagramId": null,
+          "displayedName": null,
+          "iri": null,
+          "type": "attribute-edge",
+          "sourceId": "n8",
+          "targetId": "n30",
+          "breakpoints": null,
+          "domainTyped": false,
+          "rangeTyped": true,
+          "domainMandatory": true,
+          "rangeMandatory": false
+        }
+      ],
+      "lastViewportState": null
+    }
+  ],
+  "entities": [
+    {
+      "fullIri": "http://www.obdasystems.com/books/AudioBook",
+      "annotations": [
+        {
+          "value": "AudioBook",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "it",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/Author",
+      "annotations": [
+        {
+          "value": "Author",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "it",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        {
+          "value": "An author is the creator or originator of any written work such as a book or play, and is also considered a writer or poet. ",
+          "property": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/Book",
+      "annotations": [
+        {
+          "value": "Book",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "it",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        {
+          "value": "A book is a medium for recording information in the form of writing or images, typically composed of many pages (made of papyrus, parchment, vellum, or paper) bound together and protected by a cover. The technical term for this physical arrangement is codex (plural, codices). In the history of hand-held physical supports for extended written compositions or records, the codex replaces its predecessor, the scroll. A single sheet in a codex is a leaf and each side of a leaf is a page.",
+          "property": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/ClassicBook",
+      "annotations": [
+        {
+          "value": "A classic is a book accepted as being exemplary or noteworthy.",
+          "property": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "language": "it",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        {
+          "value": "ClassicBook",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/E-Book",
+      "annotations": [
+        {
+          "value": "E-Book",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "it",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/EconomicEdition",
+      "annotations": [
+        {
+          "value": "EconomicEdition",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "it",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/Edition",
+      "annotations": [
+        {
+          "value": "The bibliographical definition of an edition includes all copies of a book printed “from substantially the same setting of type,” including all minor typographical variants.",
+          "property": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        {
+          "value": "Edition",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "it",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/EmergingWriter",
+      "annotations": [
+        {
+          "value": "EmergingWriter",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "it",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        {
+          "value": "It is an author which is not already well known by a large group of people.",
+          "property": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/Person",
+      "annotations": [
+        {
+          "value": "A person (plural people or persons) is a being that has certain capacities or attributes such as reason, morality, consciousness or self-consciousness, and being a part of a culturally established form of social relations such as kinship, ownership of property, or legal responsibility. ",
+          "property": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        {
+          "value": "Person",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/PrintedBook",
+      "annotations": [
+        {
+          "value": "PrintedBook",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "it",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/Publisher",
+      "annotations": [
+        {
+          "value": "The publisher's activity is of making information, literature, music, software and other content available to the public for sale or for free. ",
+          "property": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        {
+          "value": "Publisher",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/ScientificBook",
+      "annotations": [
+        {
+          "value": "ScientificBook",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/ScientificBookRevision",
+      "annotations": [
+        {
+          "value": "ScientificBook Revision",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/SpecialEdition",
+      "annotations": [
+        {
+          "value": "SpecialEdition",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "it",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/UnpublishedBook",
+      "annotations": [
+        {
+          "value": "UnpublishedBook",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.w3.org/2002/07/owl#Thing",
+      "annotations": null,
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/actAsAuthor",
+      "annotations": [
+        {
+          "value": "actAsAuthor",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/actAsPublisher",
+      "annotations": [
+        {
+          "value": "actAsPublisher",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/hasBookRevision",
+      "annotations": [
+        {
+          "value": "hasBookRevision",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": [
+        "inverseFunctional"
+      ]
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/hasEdition",
+      "annotations": [
+        {
+          "value": "hasEdition",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "it",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": [
+        "inverseFunctional"
+      ]
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/publishedBy",
+      "annotations": [
+        {
+          "value": "publishedBy",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/writtenBy",
+      "annotations": [
+        {
+          "value": "writtenBy",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "it",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/dateOfBirth",
+      "annotations": [
+        {
+          "value": "dateOfBirth",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "isDataPropertyFunctional": true,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/dateOfPublication",
+      "annotations": [
+        {
+          "value": "dateOfPublication",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "it",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "isDataPropertyFunctional": true,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/durationInSeconds",
+      "annotations": [
+        {
+          "value": "durationInSeconds",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/editionNumber",
+      "annotations": [
+        {
+          "value": "editionNumber",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "it",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": "http://www.w3.org/2001/XMLSchema#string",
+      "isDataPropertyFunctional": true,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/genre",
+      "annotations": [
+        {
+          "value": "genre",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "it",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        {
+          "value": "It is a genre of the book which describe the style in which the book is written",
+          "property": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": "http://www.w3.org/2001/XMLSchema#string",
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/name",
+      "annotations": [
+        {
+          "value": "name",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": "http://www.w3.org/2001/XMLSchema#string",
+      "isDataPropertyFunctional": true,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/numberOfPages",
+      "annotations": [
+        {
+          "value": "numberOfPages",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": "http://www.w3.org/2001/XMLSchema#integer",
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/penName",
+      "annotations": [
+        {
+          "value": "A pen name, also called a nom de plume or a literary double, is a pseudonym (or, in some cases, a variant form of a real name) adopted by an author and printed on the title page or by-line of their works in place of their real name. ",
+          "property": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        {
+          "value": "penName",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": "http://www.w3.org/2001/XMLSchema#string",
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/priceInDollars",
+      "annotations": [
+        {
+          "value": "priceInDollars",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": "http://www.w3.org/2001/XMLSchema#double",
+      "isDataPropertyFunctional": true,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/scientificBookRevisionDate",
+      "annotations": [
+        {
+          "value": "scientificBookRevisionDate",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/scientificTopic",
+      "annotations": [
+        {
+          "value": "scientificTopic",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": "http://www.w3.org/2001/XMLSchema#string",
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/title",
+      "annotations": [
+        {
+          "value": "It is the title of the book. It identifies the book along eith the author.",
+          "property": "http://www.w3.org/2000/01/rdf-schema#comment",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        },
+        {
+          "value": "title",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "it",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": "http://www.w3.org/2001/XMLSchema#string",
+      "isDataPropertyFunctional": true,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.obdasystems.com/books/vatNumber",
+      "annotations": [
+        {
+          "value": "vatNumber",
+          "property": "http://www.w3.org/2000/01/rdf-schema#label",
+          "language": "en",
+          "datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+        }
+      ],
+      "datatype": "http://www.w3.org/2001/XMLSchema#string",
+      "isDataPropertyFunctional": true,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.w3.org/2000/01/rdf-schema#comment",
+      "annotations": null,
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.w3.org/2000/01/rdf-schema#label",
+      "annotations": null,
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+      "annotations": null,
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "annotations": null,
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "annotations": null,
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.w3.org/2001/XMLSchema#double",
+      "annotations": null,
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.w3.org/2001/XMLSchema#integer",
+      "annotations": null,
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    },
+    {
+      "fullIri": "http://www.w3.org/2001/XMLSchema#string",
+      "annotations": null,
+      "datatype": null,
+      "isDataPropertyFunctional": null,
+      "functionProperties": null
+    }
+  ],
+  "classInstanceEntities": null,
+  "metadata": {
+    "name": null,
+    "iri": "http://www.obdasystems.com/books/",
+    "version": "http://www.obdasystems.com/books/3.0",
+    "languages": null,
+    "defaultLanguage": null,
+    "namespaces": [
+      {
+        "value": "http://www.obdasystems.com/books/",
+        "prefixes": [
+          ":"
+        ]
+      },
+      {
+        "value": "http://www.w3.org/2002/07/owl#",
+        "prefixes": [
+          "owl:"
+        ]
+      },
+      {
+        "value": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "prefixes": [
+          "rdf:"
+        ]
+      },
+      {
+        "value": "http://www.w3.org/XML/1998/namespace",
+        "prefixes": [
+          "xml:"
+        ]
+      },
+      {
+        "value": "http://www.w3.org/2001/XMLSchema#",
+        "prefixes": [
+          "xsd:"
+        ]
+      },
+      {
+        "value": "http://www.w3.org/2000/01/rdf-schema#",
+        "prefixes": [
+          "rdfs:"
+        ]
+      },
+      {
+        "value": "http://www.w3.org/2004/02/skos/core#",
+        "prefixes": [
+          "skos:"
+        ]
+      },
+      {
+        "value": "http://www.w3.org/2003/11/swrl#",
+        "prefixes": [
+          "swrl:"
+        ]
+      },
+      {
+        "value": "http://www.w3.org/2006/time#",
+        "prefixes": [
+          "time:"
+        ]
+      },
+      {
+        "value": "http://www.w3.org/2003/11/swrlb#",
+        "prefixes": [
+          "swrlb:"
+        ]
+      }
+    ],
+    "annotations": null,
+    "annotationProperties": null
+  },
+  "config": null,
+  "selectedDiagramId": null,
+  "creator": null,
+  "modelType": "ontology",
+  "actions": null
+}
