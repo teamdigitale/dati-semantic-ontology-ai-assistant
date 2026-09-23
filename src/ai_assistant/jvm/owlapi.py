@@ -24,6 +24,7 @@ try:
     import org.semanticweb.owlapi.model.OWLAnnotationProperty as OWLAnnotationProperty
     import org.semanticweb.owlapi.model.OWLAnnotationValue as OWLAnnotationValue
     import org.semanticweb.owlapi.model.OWLAxiom as OWLAxiom
+    import org.semanticweb.owlapi.model.AxiomType as AxiomType
     import org.semanticweb.owlapi.model.OWLClass as OWLClass
     import org.semanticweb.owlapi.model.OWLClassExpression as OWLClassExpression
     import org.semanticweb.owlapi.model.OWLDataFactory as OWLDataFactory
@@ -55,7 +56,10 @@ try:
     import org.semanticweb.owlapi.model.OWLObjectPropertyDomainAxiom as OWLObjectPropertyDomainAxiom
     import org.semanticweb.owlapi.model.OWLObjectPropertyRangeAxiom as OWLObjectPropertyRangeAxiom
     import org.semanticweb.owlapi.model.OWLDataPropertyDomainAxiom as OWLDataPropertyDomainAxiom
-
+    import org.semanticweb.owlapi.model.AddImport as AddImport
+    import org.semanticweb.owlapi.model.parameters.OntologyCopy as OntologyCopy
+    import org.semanticweb.owlapi.model.SetOntologyID as SetOntologyID
+    import org.semanticweb.owlapi.model.RemoveOntologyAnnotation as RemoveOntologyAnnotation
     __all__ += [
         "AddOntologyAnnotation",
         "FunctionalSyntaxDocumentFormat",
@@ -67,6 +71,7 @@ try:
         "OWLAnnotationProperty",
         "OWLAnnotationValue",
         "OWLAxiom",
+        "AxiomType",
         "OWLClass",
         "OWLClassExpression",
         "OWLDataFactory",
@@ -100,6 +105,10 @@ try:
         "OWLObjectPropertyDomainAxiom",
         "OWLObjectPropertyRangeAxiom",
         "OWLDataPropertyDomainAxiom",
+        "AddImport",
+        "OntologyCopy",
+        "SetOntologyID",
+        "RemoveOntologyAnnotation",
     ]
 except TypeError as e:
     logger.error("Cannot start JVM", e)

@@ -19,13 +19,15 @@ from fastapi import (  # noqa: F401
     Query,
     Response,
     Security,
-    status, UploadFile,
+    status,
 )
 
 from ai_assistant.server.models.extra_models import TokenModel  # noqa: F401
-from pydantic import StrictStr
-from typing import Any, Optional
+from pydantic import StrictBytes, StrictStr
+from typing import Any, Optional, Tuple, Union
+from ai_assistant.server.models.owl2_rdf_graph_conversion_result import OWL2RDFGraphConversionResult
 from ai_assistant.server.models.rdf_graph import RDFGraph
+from fastapi import File, UploadFile
 from ai_assistant.server.security_api import get_token_jwt
 
 router = APIRouter()
@@ -58,9 +60,31 @@ async def get_ontology_draft_ai_download(
 
 
 @router.post(
+    "/ai/ontologyDraft/download/rejectedAxioms",
+    responses={
+        200: {"model": str, "description": "Successful operation"},
+        401: {"description": "Unhauthorized"},
+    },
+    tags=["Convert"],
+    summary="Download the rejected axioms in OWL2",
+    response_model_by_alias=True,
+)
+async def get_ontology_draft_ai_download_rejected_axioms(
+    format: Optional[StrictStr] = Query(None, description="", alias="format"),
+    file: Optional[UploadFile] = File(None, description=""),
+    token_jwt: TokenModel = Security(
+        get_token_jwt
+    ),
+) -> str:
+    if not BaseConvertApi.subclasses:
+        raise HTTPException(status_code=500, detail="Not implemented")
+    return await BaseConvertApi.subclasses[0]().get_ontology_draft_ai_download_rejected_axioms(format, file)
+
+
+@router.post(
     "/ai/ontologyDraft/convertOWL",
     responses={
-        200: {"model": RDFGraph, "description": "OK"},
+        200: {"model": OWL2RDFGraphConversionResult, "description": "OK"},
         401: {"description": "Unhauthorized"},
     },
     tags=["Convert"],
@@ -68,11 +92,11 @@ async def get_ontology_draft_ai_download(
     response_model_by_alias=True,
 )
 async def post_ontology_draft_ai_convert_owl(
-    file: UploadFile,
+    file: Optional[UploadFile] = File(None, description=""),
     token_jwt: TokenModel = Security(
         get_token_jwt
     ),
-) -> RDFGraph:
+) -> OWL2RDFGraphConversionResult:
     if not BaseConvertApi.subclasses:
         raise HTTPException(status_code=500, detail="Not implemented")
     return await BaseConvertApi.subclasses[0]().post_ontology_draft_ai_convert_owl(file)

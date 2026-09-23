@@ -51,9 +51,9 @@ class RAGApiImpl(BaseRAGApi):
             app.designer_rag.addon_params["language"] = language
         await app.designer_rag.ainsert(put_ontology_draft_ai_request.text)
         graph = write_gscape(await app.designer_rag.chunk_entity_relation_graph.get_graph())
-        app.designer_rag.addon_params["iri_format"] = get_env_value("IRI_FORMAT", "camelCase", str),
-        app.designer_rag.addon_params["iri_language"] = get_env_value("IRI_LANGUAGE", DEFAULT_IRI_LANGUAGE, str),
-        app.designer_rag.addon_params["language"] = get_env_value("SUMMARY_LANGUAGE", DEFAULT_LANGUAGE, str),
+        app.designer_rag.addon_params["iri_format"] = get_env_value("IRI_FORMAT", "camelCase", str)
+        app.designer_rag.addon_params["iri_language"] = get_env_value("IRI_LANGUAGE", DEFAULT_IRI_LANGUAGE, str)
+        app.designer_rag.addon_params["language"] = get_env_value("SUMMARY_LANGUAGE", DEFAULT_LANGUAGE, str)
         await app.designer_rag._drop_all()
         app.designer_rag.reinitialize_doc_status()
         return graph
