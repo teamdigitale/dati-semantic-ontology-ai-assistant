@@ -1,9 +1,14 @@
 from typing import Dict, Set, List, Optional
+
+from .gscape import RDFS_LITERAL
 from .jvm.java import *
 from .jvm.owlapi import *
 from .server.models.class_instance_entity import ClassInstanceEntity
 from .server.models.data_property_value import DataPropertyValue
 from .server.models.function_properties_enum import FunctionPropertiesEnum
+from .server.models.mwsx_metadata_object import MWSXMetadataObject
+from .server.models.mwsx_metadata_triple import MWSXMetadataTriple
+from .server.models.mwsx_ontology_catalog_ontology_metadata_set import MWSXOntologyCatalogOntologyMetadataSet
 from .server.models.namespace import Namespace
 
 from .server.models.rdf_graph import RDFGraph
@@ -57,6 +62,7 @@ class OWL2Gscape:
     nodesCount: int = 0
     edgesCount: int = 0
     addedThing: bool = False
+    acceptedAxioms: set = set()
 
     # Metodi di utilità (statici in Java)
 
@@ -66,6 +72,7 @@ class OWL2Gscape:
         self.nodesCount = 0
         self.edgesCount = 0
         self.addedThing = False
+        self.acceptedAxioms = set()
 
     def add_lang_to_rdfgraph_metadata(self, lang: str, rdf_graph: RDFGraph):
         metadata = rdf_graph.metadata
@@ -75,7 +82,7 @@ class OWL2Gscape:
             metadata.languages.append(lang)
 
     def get_node_id(self, te: TypesEnum, iri: Optional[str]) -> str:
-        if te == TypesEnum.UNION or te == TypesEnum.DISJOINT_UNION:
+        if iri is None:
             id_val = f"{self.nodesPrefix}{self.nodesCount}"
             self.nodesCount += 1
             return id_val
@@ -115,8 +122,30 @@ class OWL2Gscape:
 
             # Confronto se gli insiemi di classi sono gli stessi
             if operands == ops:
+                self.acceptedAxioms.add(dca)
                 return True
         return False
+
+
+    def get_disjoint_subclasses(self, exprSup: OWLClassExpression, exprSub: OWLClassExpression):
+        ret = set()
+        axioms_to_add = set()
+        if (isinstance(exprSup, OWLClass) and isinstance(exprSub, OWLClass)):
+            disjointClassesAxioms = self.ontology.getDisjointClassesAxioms(exprSub.asOWLClass())
+            for disjointClassAxiom in disjointClassesAxioms:
+                for disjointClass in disjointClassAxiom.getClassExpressions():
+                    for sub in self.ontology.getSubClassAxiomsForSuperClass(exprSup.asOWLClass()):
+                        if (isinstance(disjointClass, OWLClass)
+                                and sub.getSubClass().asOWLClass().equals(disjointClass.asOWLClass())
+                                and sub not in self.acceptedAxioms):
+                            axioms_to_add.add(disjointClassAxiom)
+                            axioms_to_add.add(sub)
+                            ret.add(disjointClass.asOWLClass())
+        if len(ret) > 1:
+            self.acceptedAxioms.update(axioms_to_add)
+
+        return ret
+
 
     def add_annotations_edges(self, annotations: set[OWLAnnotationAssertionAxiom],
                               rdf_graph: RDFGraph, n: Node):
@@ -216,10 +245,22 @@ class OWL2Gscape:
             domain_data_participation: dict[OWLDataProperty, list[tuple[OWLClass, TypedParticipationEnum]]],
             range_participation: dict[OWLObjectProperty, list[tuple[OWLClass, TypedParticipationEnum]]],
             d: Diagram,
-            complete: bool):
-
+            complete: bool,
+            axiom: OWLAxiom
+    ):
+        if isinstance(ce, OWLClass) and complete:
+            oc: OWLClass = ce
+            edge = Edge(
+                type=TypesEnum.EQUIVALENCE,
+                id=f"{self.edgesPrefix}{self.edgesCount}",
+                sourceId=self.get_node_id(TypesEnum.CLASS, owl_class.getIRI().toString()),
+                targetId=self.get_node_id(TypesEnum.CLASS, oc.getIRI().toString())
+            )
+            self.edgesCount += 1
+            d.edges.append(edge)
+            self.acceptedAxioms.add(axiom)
         # OWLObjectSomeValuesFrom (osvf)
-        if isinstance(ce, OWLObjectSomeValuesFrom):
+        elif isinstance(ce, OWLObjectSomeValuesFrom):
             osvf: OWLObjectSomeValuesFrom = ce
 
             # OWLObjectInverseOf
@@ -233,6 +274,7 @@ class OWL2Gscape:
                         range_participation[prop] = [pair]
                     else:
                         range_participation[prop].append(pair)
+                    self.acceptedAxioms.add(axiom)
             else:  # Proprietà diretta
                 property_expr: OWLObjectPropertyExpression = osvf.getProperty()
                 if isinstance(property_expr, OWLObjectProperty):
@@ -243,7 +285,7 @@ class OWL2Gscape:
                         domain_participation[prop] = [pair]
                     else:
                         domain_participation[prop].append(pair)
-
+                    self.acceptedAxioms.add(axiom)
         # OWLDataSomeValuesFrom (dsvf)
         elif isinstance(ce, OWLDataSomeValuesFrom):
             dsvf: OWLDataSomeValuesFrom = ce
@@ -256,7 +298,7 @@ class OWL2Gscape:
                     domain_data_participation[prop] = [pair]
                 else:
                     domain_data_participation[prop].append(pair)
-
+                self.acceptedAxioms.add(axiom)
         # OWLObjectUnionOf (ouo)
         elif isinstance(ce, OWLObjectUnionOf):
             ouo: OWLObjectUnionOf = ce
@@ -273,6 +315,7 @@ class OWL2Gscape:
                         type=TypesEnum.CLASS,
                     )
                     uNodes.append(n)
+                    self.acceptedAxioms.add(axiom)
 
             if len(uNodes) != 0:
                 u = Node(
@@ -303,6 +346,7 @@ class OWL2Gscape:
                     edge.type = TypesEnum.COMPLETE_UNION if complete else TypesEnum.UNION
 
                 d.edges.append(edge)
+                self.acceptedAxioms.add(axiom)
 
                 for n in uNodes:
                     e = Edge(
@@ -337,12 +381,16 @@ class OWL2Gscape:
             namespaces=[],
             annotations=[]
         )
+        import_declarations = []
+        for i in self.ontology.getImportsDeclarations():
+            import_declarations.append(str(i.getIRI().toString()))
         rdf_graph = RDFGraph(
             modelType='ontology',
             metadata=metadata,
             diagrams=[],
             entities=[],
             classInstanceEntities=[],
+            importDeclarations=import_declarations
         )
         # Annotazioni dell'Ontologia
         for annotation in self.ontology.getAnnotations():  # JSet iterabile
@@ -402,6 +450,7 @@ class OWL2Gscape:
             # Annotazioni dell'Entità
             annotations: Set[OWLAnnotationAssertionAxiom] = self.ontology.getAnnotationAssertionAxioms(oe.getIRI())
             for annotation in annotations:  # JSet iterabile
+                self.acceptedAxioms.update(self.ontology.getDeclarationAxioms(annotation.getProperty()))
                 if annotation.getValue().asLiteral().isPresent():
                     value_literal: OWLLiteral = annotation.getValue().asLiteral().get()
                     iri = str(annotation.getProperty().getIRI().toString())
@@ -415,6 +464,7 @@ class OWL2Gscape:
                     )
                     self.add_lang_to_rdfgraph_metadata(a.language, rdf_graph)
                     e.annotations.append(a)
+                    self.acceptedAxioms.add(annotation)
                 if annotation.getValue().asIRI().isPresent():
                     value: IRI = annotation.getValue().asIRI().get()
                     iri = str(annotation.getProperty().getIRI().toString())
@@ -426,39 +476,56 @@ class OWL2Gscape:
                         hasIriValue=True
                     )
                     e.annotations.append(a)
-
+                    self.acceptedAxioms.add(annotation)
             # Proprietà Dati
             if isinstance(oe, OWLDataProperty):
                 prop_data = oe.asOWLDataProperty()
                 # Funzionale
-                if not self.ontology.getFunctionalDataPropertyAxioms(prop_data).isEmpty():
+                fdpas: Set[OWLAxiom] = self.ontology.getFunctionalDataPropertyAxioms(prop_data)
+                if not fdpas.isEmpty():
                     e.is_data_property_functional = (True)
+                    self.acceptedAxioms.update(fdpas)
                 # Range
                 ranges: Set[OWLDataPropertyRangeAxiom] = self.ontology.getDataPropertyRangeAxioms(prop_data)
                 for odpra in ranges:
                     range_expr: OWLDataRange = odpra.getRange()
                     if isinstance(range_expr, OWLDatatype):
                         e.datatype = str(range_expr.asOWLDatatype().getIRI().toString())
+                        self.acceptedAxioms.add(odpra)
                         break  # Prende il primo Datatype trovato
 
             # Proprietà Oggetto
             if isinstance(oe, OWLObjectProperty):
                 prop_object = oe.asOWLObjectProperty()
                 # Aggiunge le proprietà funzionali (Java JSet.isEmpty() -> Python not JSet)
-                if not self.ontology.getFunctionalObjectPropertyAxioms(prop_object).isEmpty():
+                fopas = self.ontology.getFunctionalObjectPropertyAxioms(prop_object)
+                if not fopas.isEmpty():
                     e.function_properties.append(FunctionPropertiesEnum.FUNCTIONAL)
-                if not self.ontology.getInverseFunctionalObjectPropertyAxioms(prop_object).isEmpty():
+                    self.acceptedAxioms.update(fopas)
+                ifopas = self.ontology.getInverseFunctionalObjectPropertyAxioms(prop_object)
+                if not ifopas.isEmpty():
                     e.function_properties.append(FunctionPropertiesEnum.INVERSEFUNCTIONAL)
-                if not self.ontology.getSymmetricObjectPropertyAxioms(prop_object).isEmpty():
+                    self.acceptedAxioms.update(ifopas)
+                sopas = self.ontology.getSymmetricObjectPropertyAxioms(prop_object)
+                if not sopas.isEmpty():
                     e.function_properties.append(FunctionPropertiesEnum.SYMMETRIC)
-                if not self.ontology.getAsymmetricObjectPropertyAxioms(prop_object).isEmpty():
+                    self.acceptedAxioms.update(sopas)
+                aopas = self.ontology.getAsymmetricObjectPropertyAxioms(prop_object)
+                if not aopas.isEmpty():
                     e.function_properties.append(FunctionPropertiesEnum.ASYMMETRIC)
-                if not self.ontology.getReflexiveObjectPropertyAxioms(prop_object).isEmpty():
+                    self.acceptedAxioms.update(aopas)
+                ropas = self.ontology.getReflexiveObjectPropertyAxioms(prop_object)
+                if not ropas.isEmpty():
                     e.function_properties.append(FunctionPropertiesEnum.REFLEXIVE)
-                if not self.ontology.getIrreflexiveObjectPropertyAxioms(prop_object).isEmpty():
+                    self.acceptedAxioms.update(ropas)
+                iopas = self.ontology.getIrreflexiveObjectPropertyAxioms(prop_object)
+                if not iopas.isEmpty():
                     e.function_properties.append(FunctionPropertiesEnum.IRREFLEXIVE)
-                if not self.ontology.getTransitiveObjectPropertyAxioms(prop_object).isEmpty():
+                    self.acceptedAxioms.update(iopas)
+                topas = self.ontology.getTransitiveObjectPropertyAxioms(prop_object)
+                if not topas.isEmpty():
                     e.function_properties.append(FunctionPropertiesEnum.TRANSITIVE)
+                    self.acceptedAxioms.update(topas)
 
             rdf_graph.entities.append(e)
 
@@ -468,8 +535,9 @@ class OWL2Gscape:
         d2 = Diagram(id=-1, name="Annotations", nodes=[], edges=[])
         rdf_graph.diagrams.append(d2)
 
-        # NODES (Classi)
-        for c in self.ontology.getClassesInSignature(Imports.INCLUDED):
+        # NODES
+        for c in self.ontology.getClassesInSignature(Imports.EXCLUDED):
+            self.acceptedAxioms.update(self.ontology.getDeclarationAxioms(c))
             node = Node(
                 id=self.get_node_id(TypesEnum.CLASS, c.getIRI().toString()),
                 iri=str(c.getIRI().toString()),
@@ -486,7 +554,7 @@ class OWL2Gscape:
         range_participation: dict[OWLObjectProperty, list[tuple[OWLClass, TypedParticipationEnum]]] = {}
 
         # EDGES (Assiomi complessi e Sottoclassi)
-        for ax in self.ontology.getAxioms(Imports.INCLUDED):
+        for ax in self.ontology.getAxioms(Imports.EXCLUDED):
             # OWLEquivalentClassesAxiom
             if isinstance(ax, OWLEquivalentClassesAxiom):
                 eca: OWLEquivalentClassesAxiom = ax
@@ -504,27 +572,41 @@ class OWL2Gscape:
                         self.compute_participation_and_hierarchies(owlClass, ce,
                                                                    domain_participation, domain_data_participation,
                                                                    range_participation, d,
-                                                                   True  # complete = True per Equivalenza
-                                                                   )
+                                                                   True,  # complete = True per Equivalenza
+                                                                   ax)
 
             # OWLSubClassOfAxiom
             elif isinstance(ax, OWLSubClassOfAxiom):
                 sbco: OWLSubClassOfAxiom = ax
                 exprSup = sbco.getSuperClass()
                 exprSub = sbco.getSubClass()
-
-                if isinstance(exprSup, OWLClass) and isinstance(exprSub, OWLClass):
-                    # Assioma di Inclusione (SubClassOf)
-                    e = Edge(
+                # DISJOINT HIERARCHIES
+                disjoint_subclasses: Set[OWLAxiom] = self.get_disjoint_subclasses(exprSup, exprSub)
+                if len(disjoint_subclasses) > 1:
+                    self.acceptedAxioms.add(ax)
+                    u = Node(
+                        id=self.get_node_id(TypesEnum.DISJOINT_UNION, None),
+                        type=TypesEnum.DISJOINT_UNION,
+                    )
+                    edge = Edge(
                         id=f"{self.edgesPrefix}{self.edgesCount}",
-                        sourceId=str(self.get_node_id(TypesEnum.CLASS,
-                                                      exprSub.asOWLClass().getIRI().toString())),
-                        targetId=str(self.get_node_id(TypesEnum.CLASS,
-                                                      exprSup.asOWLClass().getIRI().toString())),
-                        type=TypesEnum.INCLUSION
+                        type=TypesEnum.DISJOINT_UNION,
+                        sourceId=u.id,
+                        targetId=self.get_node_id(TypesEnum.CLASS, exprSup.asOWLClass().getIRI().toString()),
                     )
                     self.edgesCount += 1
-                    d.edges.append(e)
+                    d.nodes.append(u)
+                    d.edges.append(edge)
+
+                    for n in disjoint_subclasses:
+                        e = Edge(
+                            id=f"{self.edgesPrefix}{self.edgesCount}",
+                            type=TypesEnum.INPUT,
+                            sourceId=self.get_node_id(TypesEnum.CLASS, n.asOWLClass().getIRI().toString()),
+                            targetId=u.id,
+                        )
+                        self.edgesCount += 1
+                        d.edges.append(e)
                 elif isinstance(exprSup, OWLClass):
                     # SuperClasse è una Classe, Sottoclasse è una restrizione (computeParticipationAndHierarchies)
                     self.compute_participation_and_hierarchies(
@@ -534,7 +616,8 @@ class OWL2Gscape:
                         domain_data_participation,
                         range_participation,
                         d,
-                        False
+                        False,
+                        ax
                     )
                 elif isinstance(exprSub, OWLClass):
                     # Sottoclasse è una Classe, SuperClasse è una restrizione (computeParticipationAndHierarchies)
@@ -545,11 +628,13 @@ class OWL2Gscape:
                         domain_data_participation,
                         range_participation,
                         d,
-                        False
+                        False,
+                        ax
                     )
 
             # OWLDisjointUnionAxiom
             elif isinstance(ax, OWLDisjointUnionAxiom):
+                self.acceptedAxioms.add(ax)
                 dua: OWLDisjointUnionAxiom = ax
 
                 # Nodo per l'Unione
@@ -584,6 +669,7 @@ class OWL2Gscape:
 
             # OWLClassAssertionAxiom (Instance Of)
             elif isinstance(ax, OWLClassAssertionAxiom):
+                self.acceptedAxioms.add(ax)
                 caa: OWLClassAssertionAxiom = ax
 
                 if isinstance(caa.getIndividual(), OWLNamedIndividual) and caa.getClassExpression().isNamed():
@@ -597,9 +683,26 @@ class OWL2Gscape:
                     )
                     self.edgesCount += 1
                     d.edges.append(e)
+        # TRANSLATE REMAINING SUBCLASSOF
+        for ax in self.ontology.getAxioms(AxiomType.SUBCLASS_OF):
+            if ax in self.acceptedAxioms:
+                continue
+            exprSup = ax.getSuperClass()
+            exprSub = ax.getSubClass()
+            if isinstance(exprSup, OWLClass) and isinstance(exprSub, OWLClass):
+                self.acceptedAxioms.add(ax)
+                e = Edge(
+                    id=f"{self.edgesPrefix}{self.edgesCount}",
+                    sourceId=self.get_node_id(TypesEnum.CLASS, exprSub.asOWLClass().getIRI().toString()),
+                    targetId=self.get_node_id(TypesEnum.CLASS, exprSup.asOWLClass().getIRI().toString()),
+                    type=TypesEnum.INCLUSION
+                )
+                self.edgesCount += 1
+                d.edges.append(e)
 
         # 8. OBJECT PROPERTIES (Edges)
-        for op in self.ontology.getObjectPropertiesInSignature(Imports.INCLUDED):
+        for op in self.ontology.getObjectPropertiesInSignature(Imports.EXCLUDED):
+            self.acceptedAxioms.update(self.ontology.getDeclarationAxioms(op))
             domains: Set[OWLObjectPropertyDomainAxiom] = self.ontology.getObjectPropertyDomainAxioms(op)
             ranges: Set[OWLObjectPropertyRangeAxiom] = self.ontology.getObjectPropertyRangeAxioms(op)
 
@@ -612,9 +715,11 @@ class OWL2Gscape:
             # Aggiunge Domini e Range espliciti dagli assiomi alla lista di partecipazione
             for dom in domains:
                 # dom.getDomain().isNamed() -> Python boolean
+                self.acceptedAxioms.add(dom)
                 domain_class = dom.getDomain().asOWLClass() if dom.getDomain().isNamed() else self.thing
                 domain_part.append((domain_class, TypedParticipationEnum.TYPED))
             for rng in ranges:
+                self.acceptedAxioms.add(rng)
                 range_class = rng.getRange().asOWLClass() if rng.getRange().isNamed() else self.thing
                 range_part.append((range_class, TypedParticipationEnum.TYPED))
 
@@ -675,31 +780,53 @@ class OWL2Gscape:
                     d.edges.append(e)
 
         # 9. DATA PROPERTIES (Attribute Edges)
-        for dp in self.ontology.getDataPropertiesInSignature(Imports.INCLUDED):
+        for dp in self.ontology.getDataPropertiesInSignature(Imports.EXCLUDED):
+            self.acceptedAxioms.update(self.ontology.getDeclarationAxioms(dp))
+            n = Node(
+                id= self.get_node_id(TypesEnum.DATA_PROPERTY, dp.getIRI().toString()),
+                iri=str(dp.getIRI().toString()),
+                type=TypesEnum.DATA_PROPERTY,
+            )
+            d.nodes.append(n)
+            # SUB DATA PROPERTY AXIOMS
+            sdpas = self.ontology.getDataSubPropertyAxiomsForSubProperty(dp)
+            for sdpa in sdpas:
+                sup = sdpa.getSuperProperty()
+                if isinstance(sup, OWLDataProperty):
+                    e = Edge(
+                        id=f"{self.edgesPrefix}{self.edgesCount}",
+                        sourceId=n.id,
+                        targetId=self.get_node_id(TypesEnum.DATA_PROPERTY, sup.asOWLDataProperty().getIRI().toString()),
+                        type=TypesEnum.INCLUSION,
+                    )
+                    self.edgesCount += 1
+                    d.edges.append(e)
+                    self.acceptedAxioms.add(sdpa)
+
             domains: Set[OWLDataPropertyDomainAxiom] = self.ontology.getDataPropertyDomainAxioms(dp)
             domain_data_part = domain_data_participation.get(dp)
             if domain_data_part is None: domain_data_part = []
 
             # Converte gli assiomi di dominio espliciti in partecipazione
             for dom in domains:
+                self.acceptedAxioms.add(dom)
                 domain_class = dom.getDomain().asOWLClass() if dom.getDomain().isNamed() else self.thing
                 domain_data_part.append((domain_class, TypedParticipationEnum.TYPED))
 
+            if not domain_data_part:
+                domain_data_part.append((self.thing, TypedParticipationEnum.TYPED))
             dpCount = 0
             for ddp in domain_data_part:
                 dpCount += 1
                 source: OWLClass = ddp[0]
 
-                nId = self.get_node_id(TypesEnum.DATA_PROPERTY, dp.getIRI().toString())
-
                 if dpCount > 1:
                     # Logica per accoppiamento esistente
-                    finalNId = nId
                     found_edges = [
                         e for e in d.edges
                         if e.type == TypesEnum.ATTRIBUTE_EDGE
                            and e.source_id == self.get_node_id(TypesEnum.CLASS, source.getIRI().toString())
-                           and e.target_id == finalNId
+                           and e.target_id == n.id
                     ]
 
                     if found_edges:
@@ -709,23 +836,11 @@ class OWL2Gscape:
                         found_edge.domain_mandatory = found_edge.domain_mandatory or TypedParticipationEnum.isParticipated(
                             ddp[1])
                         continue
-                    else:
-                        # Se non trovato, genera un nuovo ID (simulazione del bug/logica del codice Java)
-                        # Nota: il codice Java sembra avere un bug qui, genera un nuovo nId anche se è per la stessa DP
-                        nId = f"{self.nodesPrefix}{self.nodesCount}"
-                        self.nodesCount += 1
-
-                n = Node(
-                    id=nId,
-                    iri=str(dp.getIRI().toString()),
-                    type=TypesEnum.DATA_PROPERTY,
-                )
-                d.nodes.append(n)
 
                 e = Edge(
                     id=f"{self.edgesPrefix}{self.edgesCount}",
                     sourceId=self.get_node_id(TypesEnum.CLASS, source.getIRI().toString()),
-                    targetId=nId,
+                    targetId=n.id,
                     type=TypesEnum.ATTRIBUTE_EDGE,
                 )
                 self.edgesCount += 1
@@ -735,7 +850,8 @@ class OWL2Gscape:
                 d.edges.append(e)
 
         # 10. INDIVIDUALS (Nodi)
-        for i in self.ontology.getIndividualsInSignature(Imports.INCLUDED):
+        for i in self.ontology.getIndividualsInSignature(Imports.EXCLUDED):
+            self.acceptedAxioms.update(self.ontology.getDeclarationAxioms(i))
             n = Node(
                 id=self.get_node_id(TypesEnum.INDIVIDUAL, i.getIRI().toString()),
                 iri=str(i.getIRI().toString()),
@@ -754,10 +870,11 @@ class OWL2Gscape:
                     n)
 
         # 11. OBJECT PROPERTIES ASSERTIONS (Bordi tra Individui)
-        for s in self.ontology.getIndividualsInSignature(Imports.INCLUDED):
+        for s in self.ontology.getIndividualsInSignature(Imports.EXCLUDED):
             for opa in self.ontology.getObjectPropertyAssertionAxioms(s):
                 t: OWLIndividual = opa.getObject()
                 if isinstance(t, OWLNamedIndividual):
+                    self.acceptedAxioms.add(opa)
                     e = Edge(
                         id=f"{self.edgesPrefix}{self.edgesCount}",
                         iri=str(opa.getProperty().asOWLObjectProperty().getIRI().toString()),
@@ -773,12 +890,15 @@ class OWL2Gscape:
                     e.range_typed = False
                     e.range_mandatory = True
                     d.edges.append(e)
-            if not self.ontology.getDataPropertyAssertionAxioms(s).isEmpty():
+
+            dpas = self.ontology.getDataPropertyAssertionAxioms(s)
+            if not dpas.isEmpty():
+                self.acceptedAxioms.update(dpas)
                 cie = ClassInstanceEntity(
                     fullIri=str(s.getIRI().toString()),
                     dataProperties=[]
                 )
-                for dpa in self.ontology.getDataPropertyAssertionAxioms(s):
+                for dpa in dpas:
                     dpi = DataPropertyValue(
                         iri=str(dpa.getProperty().asOWLDataProperty().getIRI().toString()),
                         value=str(dpa.getObject().getLiteral()),
@@ -794,6 +914,85 @@ class OWL2Gscape:
 
         return rdf_graph
 
+    def get_rejected_axioms_as_ontology(self) -> OWLOntology:
+        manager: OWLOntologyManager = OWLManager.createOWLOntologyManager()
+        originalIRI = self.ontology.getOntologyID().getOntologyIRI().get().toString() if self.ontology.getOntologyID().getOntologyIRI().isPresent() else "http://obdasystems.com/example"
+        id: OWLOntologyID = OWLOntologyID(
+            IRI.create(originalIRI + "/rejectedAxioms#"),
+        )
+        owlOntology: OWLOntology = manager.createOntology(id)
+        rejectedAxioms = HashSet(self.ontology.getAxioms())
+        rejectedAxioms.removeAll(self.acceptedAxioms)
+        owlOntology.addAxioms(rejectedAxioms)
+        return owlOntology
+
+    def update_metadata(self, metadata: MWSXOntologyCatalogOntologyMetadataSet | None, new_version: str | None):
+        manager: OWLOntologyManager = OWLManager.createOWLOntologyManager()
+        new_ontology: OWLOntology = manager.copyOntology(self.ontology, OntologyCopy.DEEP)
+        ontology_iri = new_ontology.getOntologyID().getOntologyIRI()
+        ontology_iri = ontology_iri.get() if ontology_iri.isPresent() else IRI.create("http://obdasystems.com/example")
+        change = SetOntologyID(
+            new_ontology,
+            OWLOntologyID(
+                ontology_iri,
+                IRI.create(new_version),
+            )
+        )
+        new_ontology.getOWLOntologyManager().applyChange(change)
+        df = OWLManager.getOWLDataFactory()
+        if metadata is not None:
+            for tr in metadata.metadata_triples or []:
+                self.remove_metadata_annotations(new_ontology, ontology_iri.toString(), tr, df)
+            for tr in metadata.metadata_triples or []:
+                self.add_metadata_annotations(new_ontology, ontology_iri.toString(), tr, df)
+        return new_ontology
+
+    def remove_metadata_annotations(self, ontology: OWLOntology, ontology_iri: str, triple: MWSXMetadataTriple, df: OWLDataFactory):
+        predicate = triple.predicate
+        annotation_property = df.getOWLAnnotationProperty(IRI.create(predicate.iri))
+        subject = triple.subject
+        remove_annotations = []
+        if subject is not None:
+            if subject.iri == ontology_iri:
+                annotations = ontology.getAnnotations()
+                for annotation in annotations:
+                    if annotation.getProperty() == annotation_property:
+                        remove_annotations.append(RemoveOntologyAnnotation(ontology, annotation))
+                for remove_annotation in remove_annotations:
+                    ontology.applyChange(remove_annotation)
+            else:
+                annotations = ontology.getAnnotationAssertionAxioms(IRI.create(subject.iri), Imports.EXCLUDED)
+                for annotation in annotations:
+                    if annotation.getProperty() == annotation_property:
+                        remove_annotations.append(annotation)
+                for remove_annotation in remove_annotations:
+                    ontology.removeAxiom(remove_annotation)
+
+    def add_metadata_annotations(self, ontology: OWLOntology, ontology_iri: str, triple: MWSXMetadataTriple, df: OWLDataFactory):
+        predicate = triple.predicate
+        annotation_property = df.getOWLAnnotationProperty(IRI.create(predicate.iri))
+        subject = triple.subject
+        object = triple.object
+        filler = self.get_metadata_annotation_filler(object, df)
+        if subject.iri == ontology_iri:
+            ann = df.getOWLAnnotation(annotation_property, filler)
+            aoa = AddOntologyAnnotation(ontology, ann)
+            ontology.applyChange(aoa)
+        else:
+            ax = df.getOWLAnnotationAssertionAxiom(annotation_property, IRI.create(subject.iri), filler)
+            ontology.addAxiom(ax)
+
+    def get_metadata_annotation_filler(self, object: MWSXMetadataObject, df):
+        if object.is_iri: return IRI.create(object.iri)
+        else:
+            lit: OWLLiteral
+            lang = object.lang
+            if lang is not None:
+                lit = df.getOWLLiteral(object.value, lang)
+            else:
+                datatype = object.datatype_iri if object.datatype_iri is not None else RDFS_LITERAL
+                lit = df.getOWLLiteral(object.value, df.getOWLDatatype(IRI.create(datatype)))
+            return lit
 
 def parse_ontology(owl_file: bytes):
     return (OWLManager.createOWLOntologyManager()

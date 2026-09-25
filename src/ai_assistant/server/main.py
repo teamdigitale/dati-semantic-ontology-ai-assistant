@@ -25,6 +25,7 @@ from ..llm.openai import (
 from ai_assistant.server.apis.convert_api import router as ConvertApiRouter
 from ai_assistant.server.apis.prompt_api import router as PromptApiRouter
 from ai_assistant.server.apis.rag_api import router as RAGApiRouter
+from ai_assistant.server.apis.metadata_api import router as MetadataApiRouter
 
 
 @asynccontextmanager
@@ -126,6 +127,7 @@ app.add_middleware(
 app.include_router(ConvertApiRouter)
 app.include_router(PromptApiRouter)
 app.include_router(RAGApiRouter)
+app.include_router(MetadataApiRouter)
 
 from ..utils import logger
 from fastapi import Request, status

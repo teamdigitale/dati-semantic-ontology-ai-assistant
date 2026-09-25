@@ -35,7 +35,7 @@ class GrapholscapeAnnotation(BaseModel):
     lexical_form: Optional[StrictStr] = Field(default=None, description="Has been renamed to `value`, kept for back-compatibility.", alias="lexicalForm")
     value: Optional[StrictStr] = None
     has_iri_value: Optional[StrictBool] = Field(default=False, alias="hasIriValue")
-    var_property: StrictStr = Field(alias="property")
+    var_property: StrictStr = Field(alias="property", json_schema_extra={"examples": ["rdfs:label"]})
     language: Optional[StrictStr] = None
     datatype: Optional[StrictStr] = None
     __properties: ClassVar[List[str]] = ["lexicalForm", "value", "hasIriValue", "property", "language", "datatype"]

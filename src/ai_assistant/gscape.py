@@ -45,6 +45,17 @@ DATATYPES = dict(
     datetime = XML_DATETIME,
 )
 
+NODE_ENTITY_TYPES = [
+    TypesEnum.CLASS,
+    TypesEnum.DATA_PROPERTY,
+    TypesEnum.INDIVIDUAL,
+]
+
+EDGE_ENTITY_TYPES = [
+    TypesEnum.OBJECT_PROPERTY,
+    TypesEnum.ANNOTATION_PROPERTY,
+]
+
 def load_gscape(rdf_graph: RDFGraph) -> MultiDiGraph:
     default_language = inv_languages[DEFAULT_LANGUAGE]
     language = default_language
@@ -66,7 +77,7 @@ def load_gscape(rdf_graph: RDFGraph) -> MultiDiGraph:
 
         descriptions = defaultdict(list)
         labels = defaultdict(list)
-        
+
         if entity.annotations:
             for annotation in entity.annotations:
                 if annotation.var_property == RDFS_COMMENT:
@@ -79,10 +90,10 @@ def load_gscape(rdf_graph: RDFGraph) -> MultiDiGraph:
 #                         labels[annotation.language] = list()
                     label_text = annotation.value or annotation.lexical_form
                     labels[annotation.language].append(label_text)
-        
-            elem_data["description"] = {k:v[0] for k,v in descriptions.items()}     
-            elem_data["label"] = {k:v[0] for k,v in labels.items()}     
-        
+
+            elem_data["description"] = {k: v[0] for k, v in descriptions.items()}
+            elem_data["label"] = {k: v[0] for k, v in labels.items()}
+
         return elem_data
 
     entities_dict = {x.full_iri: x for x in rdf_graph.entities}
@@ -105,14 +116,15 @@ def load_gscape(rdf_graph: RDFGraph) -> MultiDiGraph:
                     "node_type": node_type,
                     "frozen": True if node.ai_generated is None else False,
                 }
-                entity = entities_dict[node.iri]
-                if "datatype" in entity.to_dict():
-                    n["datatype"] = entity.datatype
-                else:
-                    if node.type == TypesEnum.DATA_PROPERTY:
-                        n["datatype"] = RDFS_LITERAL
+                if node.iri in entities_dict:
+                    entity = entities_dict[node.iri]
+                    if "datatype" in entity.to_dict():
+                        n["datatype"] = entity.datatype
+                    else:
+                        if node.type == TypesEnum.DATA_PROPERTY:
+                            n["datatype"] = RDFS_LITERAL
 
-                n = get_gscape_annotations(entity, n)
+                    n = get_gscape_annotations(entity, n)
 
                 G.add_node(node.iri, **n)
 
@@ -180,7 +192,7 @@ def load_gscape(rdf_graph: RDFGraph) -> MultiDiGraph:
                 if namespace is not None:
                     edge_data["namespace"] = namespace
 
-                if edge.iri is not None:
+                if edge.iri is not None and edge.iri in entities_dict:
                     entity = entities_dict[edge.iri]
                     edge_data = get_gscape_annotations(entity, edge_data)
 
@@ -254,7 +266,7 @@ def write_gscape(nx_graph: MultiDiGraph, file_name: str | None = None) -> RDFGra
         if not added_nodes.get(gscape_node.iri):
             diagram.nodes.append(gscape_node)
             added_nodes[gscape_node.iri] = gscape_node
-            if not added_entities.get(gscape_node.iri):
+            if gscape_node.type in NODE_ENTITY_TYPES and not added_entities.get(gscape_node.iri):
                 if node_data["node_type"] == "characteristic":
                     if "datatype" not in node_data:
                         node_data["datatype"] = RDFS_LITERAL
@@ -327,7 +339,7 @@ def write_gscape(nx_graph: MultiDiGraph, file_name: str | None = None) -> RDFGra
         )
         diagram.edges.append(gscape_edge)
         entity = added_entities.get(gscape_edge.iri)
-        if not entity and gscape_edge.iri is not None:
+        if not entity and gscape_edge.type in EDGE_ENTITY_TYPES and gscape_edge.iri is not None:
             entity = get_gscape_entity(gscape_edge.iri, edge_data)
             rdf_graph.entities.append(entity)
             added_entities[gscape_edge.iri] = entity
@@ -353,7 +365,7 @@ def write_gscape(nx_graph: MultiDiGraph, file_name: str | None = None) -> RDFGra
         annotations = []
         if elem_data.get("description"):
             for lang_tag, text in elem_data.get("description").items():
-                if text: 
+                if text:
                     annotations.append(
                         Annotation(
                             property=RDFS_COMMENT,
@@ -365,7 +377,7 @@ def write_gscape(nx_graph: MultiDiGraph, file_name: str | None = None) -> RDFGra
 
         if elem_data.get("label"):
             for lang_tag, text in elem_data.get("label").items():
-                if text: 
+                if text:
                     annotations.append(
                         Annotation(
                             property=RDFS_LABEL,
@@ -410,14 +422,14 @@ def write_gscape(nx_graph: MultiDiGraph, file_name: str | None = None) -> RDFGra
 def get_classes_in_hierarchy(
         df: OWLDataFactory,
         du_node: Node,
-        edges: list[Edge],
         node_map: dict[str, Node],
+        diagram: Diagram,
 ):
     """Trova le classi collegate per gli assiomi di Unione."""
     ces = HashSet()
-    for e in edges:
+    for e in (diagram.edges or []):
         if e.type == TypesEnum.INPUT and e.target_id == du_node.id:
-            source_node = node_map.get(e.source_id)
+            source_node = node_map.get(f"{diagram.id}_{e.source_id}")
             if source_node is None:
                 raise RuntimeError(f"Cannot find node {e.source_id} for edge {e.id}")
             # Chiama il metodo Java df.getOWLClass
@@ -440,6 +452,10 @@ def rdf_graph_to_owl(rdf_graph: RDFGraph) -> OWLOntology:
 
     # 2. Creazione dell'Ontologia
     owlOntology: OWLOntology = manager.createOntology(id)
+    # Aggiungo gli imports
+    for i in rdf_graph.import_declarations or []:
+        ai = AddImport(owlOntology, df.getOWLImportsDeclaration(IRI.create(i)))
+        manager.applyChange(ai)
 
     # 3. Gestione delle Annotazioni dei Metadati
     if rdf_graph.metadata.annotations is not None:
@@ -448,12 +464,13 @@ def rdf_graph_to_owl(rdf_graph: RDFGraph) -> OWLOntology:
             v = a.value
             if v is None:
                 v = a.lexical_form
-            value: OWLAnnotationValue = df.getOWLLiteral(v)
+            value: OWLAnnotationValue = IRI.create(v) if a.has_iri_value else df.getOWLLiteral(v)
             if a.language is not None:
                 value: OWLAnnotationValue = df.getOWLLiteral(v, a.language)
             owlAnnotation: OWLAnnotation = df.getOWLAnnotation(property, value)
             changes = ArrayList()
             changes.add(AddOntologyAnnotation(owlOntology, owlAnnotation))
+            owlOntology.addAxiom(df.getOWLDeclarationAxiom(property))
             manager.applyChanges(changes)
 
     # 4. Gestione dei Namespace (Prefissi)
@@ -476,10 +493,11 @@ def rdf_graph_to_owl(rdf_graph: RDFGraph) -> OWLOntology:
                 v = a.value
                 if v is None:
                     v = a.lexical_form
-                value: OWLAnnotationValue = df.getOWLLiteral(v)
+                value: OWLAnnotationValue = IRI.create(v) if a.has_iri_value else df.getOWLLiteral(v)
                 if a.language is not None:
                     value: OWLAnnotationValue = df.getOWLLiteral(v, a.language)
                 # owlOntology.addAxiom
+                owlOntology.addAxiom(df.getOWLDeclarationAxiom(property))
                 owlOntology.addAxiom(df.getOWLAnnotationAssertionAxiom(property, subject, value))
 
         # Proprietà Funzionali (Object Properties)
@@ -517,7 +535,7 @@ def rdf_graph_to_owl(rdf_graph: RDFGraph) -> OWLOntology:
     for d in rdf_graph.diagrams:
         if d.nodes is not None:
             for n in d.nodes:
-                map_nodes[n.id] = n
+                map_nodes[f"{d.id}_{n.id}"] = n
                 owlEntity: Optional[OWLEntity] = None
 
                 # Simula lo switch-case
@@ -533,12 +551,12 @@ def rdf_graph_to_owl(rdf_graph: RDFGraph) -> OWLOntology:
                 if owlEntity is not None:
                     owlOntology.addAxiom(df.getOWLDeclarationAxiom(owlEntity))
 
-    # 7. Elaborazione dei Bordi (Edges) e Aggiunta degli Assiomi
+    # 7. Elaborazione degli archi (Edges) e Aggiunta degli Assiomi
     for d in rdf_graph.diagrams:
         if d.edges is not None:
             for e in d.edges:
-                source_node = map_nodes.get(e.source_id)
-                target_node = map_nodes.get(e.target_id)
+                source_node = map_nodes.get(f"{d.id}_{e.source_id}")
+                target_node = map_nodes.get(f"{d.id}_{e.target_id}")
 
                 if source_node is None:
                     raise RuntimeError(f"Cannot find node {e.source_id} for edge {e.id}")
@@ -548,7 +566,8 @@ def rdf_graph_to_owl(rdf_graph: RDFGraph) -> OWLOntology:
                 # Simula lo switch-case sul tipo di bordo
                 if e.type == TypesEnum.OBJECT_PROPERTY:
                     # Assiomi di Proprietà di Oggetto
-                    property: OWLObjectPropertyExpression = df.getOWLObjectProperty(IRI.create(e.iri))
+                    property: OWLObjectProperty = df.getOWLObjectProperty(IRI.create(e.iri))
+                    owlOntology.addAxiom(df.getOWLDeclarationAxiom(property))
 
                     if source_node.type == TypesEnum.CLASS or target_node.type == TypesEnum.CLASS:
                         # Dominio e Range a livello di Classe
@@ -580,7 +599,8 @@ def rdf_graph_to_owl(rdf_graph: RDFGraph) -> OWLOntology:
 
                 elif e.type == TypesEnum.ATTRIBUTE_EDGE:
                     # Assiomi di Proprietà di Dati
-                    data_property: OWLDataPropertyExpression = df.getOWLDataProperty(IRI.create(target_node.iri))
+                    data_property: OWLDataProperty = df.getOWLDataProperty(IRI.create(target_node.iri))
+                    owlOntology.addAxiom(df.getOWLDeclarationAxiom(data_property))
                     data_domain: OWLClassExpression = df.getOWLClass(IRI.create(source_node.iri))
 
                     if e.domain_typed:
@@ -604,10 +624,10 @@ def rdf_graph_to_owl(rdf_graph: RDFGraph) -> OWLOntology:
 
                 elif e.type == TypesEnum.EQUIVALENCE:
                     # Classi Equivalenti
-                    owlOntology.addAxiom(df.getOWLEquivalentClassesAxiom(
-                        df.getOWLClass(IRI.create(source_node.iri)),
-                        df.getOWLClass(IRI.create(target_node.iri))
-                    ))
+                    equivs = HashSet()
+                    equivs.add(df.getOWLClass(IRI.create(source_node.iri)))
+                    equivs.add(df.getOWLClass(IRI.create(target_node.iri)))
+                    owlOntology.addAxiom(df.getOWLEquivalentClassesAxiom(equivs))
 
                 elif e.type == TypesEnum.INCLUSION:
                     # SubClassOf o SubDataPropertyOf
@@ -634,8 +654,7 @@ def rdf_graph_to_owl(rdf_graph: RDFGraph) -> OWLOntology:
                     # Assiomi di Unione/Disgiunzione
                     if target_node.type == TypesEnum.CLASS:
                         owlClass: OWLClass = df.getOWLClass(IRI.create(target_node.iri))
-                        ces: set[OWLClass] = get_classes_in_hierarchy(df, source_node, d.edges,
-                                                                      map_nodes)
+                        ces: set[OWLClass] = get_classes_in_hierarchy(df, source_node, map_nodes, d)
                         axioms = HashSet()
                         for i in ces:
                             axioms.add(df.getOWLSubClassOfAxiom(i, owlClass))
@@ -666,14 +685,14 @@ def rdf_graph_to_owl(rdf_graph: RDFGraph) -> OWLOntology:
         for cie in rdf_graph.class_instance_entities:
             if cie.data_properties is not None:
                 for dp in cie.data_properties:
+                    value = df.getOWLLiteral(dp.getValue(),OWL2Datatype.getDatatype(IRI.create(dp.getDatatype())))\
+                        if dp.getLanguage() is None\
+                        else df.getOWLLiteral(dp.getValue(), dp.getLanguage())
                     owlOntology.add(
                         df.getOWLDataPropertyAssertionAxiom(
                             df.getOWLDataProperty(dp.iri),
                             df.getOWLNamedIndividual(cie.full_iri),
-                            df.getOWLLiteral(
-                                dp.value,
-                                dp.datatype
-                            )
+                            value
                         ))
 
     return owlOntology

@@ -49,7 +49,8 @@ class RDFGraph(BaseModel):
     actions: Optional[List[Action]] = None
     creator: Optional[StrictStr] = None
     constraints: Optional[List[SHACLShape]] = None
-    __properties: ClassVar[List[str]] = ["diagrams", "entities", "classInstanceEntities", "metadata", "config", "selectedDiagramId", "modelType", "actions", "creator", "constraints"]
+    import_declarations: Optional[List[StrictStr]] = Field(default=None, alias="importDeclarations")
+    __properties: ClassVar[List[str]] = ["diagrams", "entities", "classInstanceEntities", "metadata", "config", "selectedDiagramId", "modelType", "actions", "creator", "constraints", "importDeclarations"]
 
     @field_validator('model_type')
     def model_type_validate_enum(cls, value):
@@ -157,7 +158,8 @@ class RDFGraph(BaseModel):
             "modelType": obj.get("modelType"),
             "actions": [Action.from_dict(_item) for _item in obj.get("actions")] if obj.get("actions") is not None else None,
             "creator": obj.get("creator"),
-            "constraints": [SHACLShape.from_dict(_item) for _item in obj.get("constraints")] if obj.get("constraints") is not None else None
+            "constraints": [SHACLShape.from_dict(_item) for _item in obj.get("constraints")] if obj.get("constraints") is not None else None,
+            "importDeclarations": obj.get("importDeclarations")
         })
         return _obj
 

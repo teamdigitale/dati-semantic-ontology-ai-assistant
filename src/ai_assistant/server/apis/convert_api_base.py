@@ -2,10 +2,11 @@
 
 from typing import ClassVar, Dict, List, Tuple  # noqa: F401
 
-from fastapi import UploadFile
-from pydantic import StrictStr
-from typing import Any, Optional
+from pydantic import StrictBytes, StrictStr
+from typing import Any, Optional, Tuple, Union
+from ai_assistant.server.models.owl2_rdf_graph_conversion_result import OWL2RDFGraphConversionResult
 from ai_assistant.server.models.rdf_graph import RDFGraph
+from fastapi import File, UploadFile
 from ai_assistant.server.security_api import get_token_jwt
 
 class BaseConvertApi:
@@ -22,8 +23,16 @@ class BaseConvertApi:
         ...
 
 
+    async def get_ontology_draft_ai_download_rejected_axioms(
+        self,
+        format: Optional[StrictStr],
+        file: Optional[UploadFile],
+    ) -> str:
+        ...
+
+
     async def post_ontology_draft_ai_convert_owl(
         self,
-        file: UploadFile,
-    ) -> RDFGraph:
+        file: Optional[UploadFile],
+    ) -> OWL2RDFGraphConversionResult:
         ...

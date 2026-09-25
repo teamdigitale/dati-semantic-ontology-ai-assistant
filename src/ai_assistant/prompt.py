@@ -384,7 +384,7 @@ Per ciascuna classe dell'ontologia presente in elenco definisci una istanza conc
 - Ogni nuovo oggetto deve avere un nome differente e diverso dal nome della relativa classe.
 - Se è presente una relazione con un'altra classe, crea una sua istanza.
 - Se è presente un attributo, assegna un valore coerente con il suo datatype.
-- Mostra solo i namespaces strettamente necessari.
+- Mostra sempre i namespaces strettamente necessari.
 - Restituisci solo gli oggetti concreti in formato Turtle con il relativo namespaces, senza ulteriori specifiche, annotazioni, etichette o commenti.
 
 ---Class List---
